@@ -5,8 +5,9 @@ import { recordFinding } from '../contacts/repo.js';
 import { crawlCompany } from '../crawler/crawler.js';
 import { getDb, logEvent, nowIso } from '../db/index.js';
 import { bus, channels } from '../events.js';
+import { scheduleSnapshot } from '../export/snapshot.js';
 import { clearRobotsCache } from '../lib/robots.js';
-import { isNonOfficialDomain, normalizeWebsite, UrlError } from '../lib/url.js';
+import { isInstitutionalDomain, isNonOfficialDomain, normalizeWebsite, UrlError } from '../lib/url.js';
 import { logger } from '../logger.js';
 import { GooglePlacesProvider } from './providers/googlePlaces.js';
 import { OsmProvider } from './providers/osm.js';
@@ -132,6 +133,9 @@ function upsertCompany(runId: number, providerId: string, d: DiscoveredCompany):
         if (isNonOfficialDomain(n.domain)) {
           status = 'invalid_website';
           scanError = `Listed website ${n.domain} is a social/directory page, not an official site`;
+        } else if (isInstitutionalDomain(n.domain)) {
+          status = 'invalid_website';
+          scanError = 'University / government / research institution site — not a company';
         } else {
           website = n.url;
           domain = n.domain;
@@ -255,6 +259,7 @@ async function executeRun(runId: number, provider: DiscoveryProvider, criteria: 
     db.prepare(`UPDATE companies SET discovery_status = 'discovered' WHERE discovery_status = 'scanning' AND last_run_id = ?`).run(runId);
     clearRobotsCache();
     publish(runId);
+    scheduleSnapshot();
   }
 }
 

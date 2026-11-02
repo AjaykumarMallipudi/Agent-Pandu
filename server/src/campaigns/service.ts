@@ -7,6 +7,7 @@ import { buildContext, renderTemplate } from '../email/templates.js';
 import { smtpStatus } from '../email/transport.js';
 import { bus, channels } from '../events.js';
 import { getSettings } from '../settings.js';
+import { companyContactedSql, contactedSql, typeRankSql } from '../contacts/repo.js';
 
 export class HttpError extends Error {
   constructor(
@@ -118,13 +119,15 @@ export function publishCampaign(id: number): void {
 function eligibilityReason(row: {
   suppressed: number;
   contacted: number;
+  company_contacted: number;
   status: string;
   syntax_valid: number;
   confidence: number;
-}, minConfidence: number): string | null {
+}, minConfidence: number, onePerCompany: boolean): string | null {
   if (row.suppressed) return 'Address is on the suppression list';
   if (row.contacted) return 'Already contacted (previous send or unresolved outcome)';
   if (row.status !== 'active' || !row.syntax_valid) return 'Contact is marked invalid';
+  if (onePerCompany && row.company_contacted) return 'Someone at this company was already contacted (one contact per company)';
   if (row.confidence < minConfidence) return `Confidence ${row.confidence} is below the minimum ${minConfidence}`;
   return null;
 }
@@ -148,9 +151,11 @@ export function createCampaign(input: { name: string; templateId: number; positi
   const placeholders = ids.map(() => '?').join(',');
   const contacts = db
     .prepare(
-      `SELECT c.id, c.email, c.name, c.contact_type, c.role_title, c.status, c.syntax_valid, c.confidence, co.name AS company_name,
+      `SELECT c.id, c.email, c.name, c.contact_type, c.role_title, c.status, c.syntax_valid, c.confidence, c.company_id, co.name AS company_name,
               (s.id IS NOT NULL) AS suppressed,
-              EXISTS (SELECT 1 FROM send_ledger l WHERE l.email = c.email) AS contacted
+              ${contactedSql('c')} AS contacted,
+              ${companyContactedSql('c')} AS company_contacted,
+              ${typeRankSql('c')} AS type_rank
        FROM contacts c JOIN companies co ON co.id = c.company_id
        LEFT JOIN suppressions s ON s.email = c.email
        WHERE c.id IN (${placeholders})`,
@@ -164,11 +169,29 @@ export function createCampaign(input: { name: string; templateId: number; positi
     status: string;
     syntax_valid: number;
     confidence: number;
+    company_id: number;
     company_name: string;
     suppressed: number;
     contacted: number;
+    company_contacted: number;
+    type_rank: number;
   }[];
   if (contacts.length !== ids.length) throw new HttpError(400, 'Some selected contacts no longer exist');
+
+  // One contact per company: keep the best eligible one (role priority, then confidence), skip the rest.
+  const reasons = new Map<number, string | null>(contacts.map((c) => [c.id, eligibilityReason(c, settings.minConfidence, settings.onePerCompany)]));
+  if (settings.onePerCompany) {
+    const keep = new Map<number, (typeof contacts)[number]>();
+    for (const c of contacts) {
+      if (reasons.get(c.id)) continue;
+      const cur = keep.get(c.company_id);
+      if (!cur || c.type_rank < cur.type_rank || (c.type_rank === cur.type_rank && c.confidence > cur.confidence)) keep.set(c.company_id, c);
+    }
+    for (const c of contacts) {
+      const kept = keep.get(c.company_id);
+      if (!reasons.get(c.id) && kept && kept.id !== c.id) reasons.set(c.id, `One contact per company: sending to ${kept.email} instead`);
+    }
+  }
 
   return db.transaction(() => {
     const campaignId = Number(
@@ -192,7 +215,7 @@ export function createCampaign(input: { name: string; templateId: number; positi
           unsubscribeUrl: unsubscribeUrl(token),
         }),
       );
-      const reason = eligibilityReason(c, settings.minConfidence);
+      const reason = reasons.get(c.id) ?? null;
       const key = `c${campaignId}-${crypto.createHash('sha256').update(c.email).digest('hex').slice(0, 24)}`;
       insert.run(
         campaignId, c.id, c.email, c.name, c.company_name, c.contact_type, rendered.subject, rendered.html, rendered.text,

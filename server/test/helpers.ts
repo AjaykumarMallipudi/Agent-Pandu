@@ -38,6 +38,7 @@ export function setupTestEnv(overrides: Record<string, string> = {}): { dataDir:
       MIN_CONFIDENCE: '40',
       GOOGLE_PLACES_API_KEY: '',
       OSM_CONTACT_EMAIL: '',
+      OSM_OVERPASS_FALLBACK_URLS: '',
       ...overrides,
     }),
   );

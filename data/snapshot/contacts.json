@@ -1,0 +1,4474 @@
+[
+  {
+    "email": "aaditya.narain@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.952Z",
+    "last_seen_at": "2026-10-09T06:36:50.947Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Aaditya Vardhan Narain — Aaditya Vardhan NarainCSDaaditya.narain@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "abdulmuqtadir.m@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.952Z",
+    "last_seen_at": "2026-10-09T06:36:50.947Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Mohammad Abdul Muqtadir — Mohammad Abdul MuqtadirMS (CSE)abdulmuqtadir.m@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "abhishek.singh@iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.941Z",
+    "last_seen_at": "2026-10-09T06:36:50.936Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Abhishek Kumar Singh — Abhishek Kumar SinghAssistant Professorabhishek.singh@iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "absoluteonlinehyd@gmail.com",
+    "company_key": "aoplweb.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 0,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 40,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "-15 email domain gmail.com differs from company website aoplweb.com",
+      "+10 found on a about/leadership/contact page",
+      "+10 seen on 4 pages",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:35:45.545Z",
+    "last_seen_at": "2026-10-09T06:35:45.543Z",
+    "evidence": [
+      {
+        "source_url": "https://aoplweb.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Our Hyderabad Office — info@aoplweb.com / absoluteonlinehyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.com/",
+        "page_type": "home",
+        "method": "text",
+        "context_snippet": "Contact Info — info@aoplweb.com / Absoluteonlinehyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.com/about/",
+        "page_type": "about",
+        "method": "text",
+        "context_snippet": "Contact Info — info@aoplweb.com / Absoluteonlinehyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.com/best-school-management-softwares-in-hyderabad/",
+        "page_type": "leadership",
+        "method": "text",
+        "context_snippet": "Contact Info — info@aoplweb.com / Absoluteonlinehyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.com/contact-us/",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Email Address : — info@aoplweb.com / absoluteonlinehyd@gmail.com"
+      }
+    ]
+  },
+  {
+    "email": "absoluteonlinhyd@gmail.com",
+    "company_key": "aoplweb.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Careers",
+    "syntax_valid": 1,
+    "domain_matches_company": 0,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 45,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "-15 email domain gmail.com differs from company website aoplweb.in",
+      "+10 found on a about/careers/contact page",
+      "+10 seen on 6 pages",
+      "Type Careers: listed on the careers page",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:36:04.323Z",
+    "last_seen_at": "2026-10-09T06:36:04.326Z",
+    "evidence": [
+      {
+        "source_url": "https://aoplweb.in/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Ignite Your Digital Growth. Dominate Local Search & Win More Customers. — AOPL Web (aoplweb.in) is Hyderabad's premier Internet marketing, bespoke web design, and local SEO ranking network empowering local businesses to outrank competitors and scale revenues."
+      },
+      {
+        "source_url": "https://aoplweb.in/",
+        "page_type": "home",
+        "method": "text",
+        "context_snippet": "Request Your Free 360° Digital Growth Audit — 🔒 100% Confidential. Inquiries are dispatched directly to absoluteonlinhyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.in/about",
+        "page_type": "about",
+        "method": "mailto",
+        "context_snippet": "Ignite Your Digital Growth. Dominate Local Search & Win More Customers. — AOPL Web (aoplweb.in) is Hyderabad's premier Internet marketing, bespoke web design, and local SEO ranking network empowering local businesses to outrank competitors and scale revenues."
+      },
+      {
+        "source_url": "https://aoplweb.in/about",
+        "page_type": "about",
+        "method": "text",
+        "context_snippet": "Request Your Free 360° Digital Growth Audit — 🔒 100% Confidential. Inquiries are dispatched directly to absoluteonlinhyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.in/about-us",
+        "page_type": "about",
+        "method": "mailto",
+        "context_snippet": "Ignite Your Digital Growth. Dominate Local Search & Win More Customers. — AOPL Web (aoplweb.in) is Hyderabad's premier Internet marketing, bespoke web design, and local SEO ranking network empowering local businesses to outrank competitors and scale revenues."
+      },
+      {
+        "source_url": "https://aoplweb.in/about-us",
+        "page_type": "about",
+        "method": "text",
+        "context_snippet": "Request Your Free 360° Digital Growth Audit — 🔒 100% Confidential. Inquiries are dispatched directly to absoluteonlinhyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.in/careers",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "Ignite Your Digital Growth. Dominate Local Search & Win More Customers. — AOPL Web (aoplweb.in) is Hyderabad's premier Internet marketing, bespoke web design, and local SEO ranking network empowering local businesses to outrank competitors and scale revenues."
+      },
+      {
+        "source_url": "https://aoplweb.in/careers",
+        "page_type": "careers",
+        "method": "text",
+        "context_snippet": "Request Your Free 360° Digital Growth Audit — 🔒 100% Confidential. Inquiries are dispatched directly to absoluteonlinhyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.in/contact",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Ignite Your Digital Growth. Dominate Local Search & Win More Customers. — AOPL Web (aoplweb.in) is Hyderabad's premier Internet marketing, bespoke web design, and local SEO ranking network empowering local businesses to outrank competitors and scale revenues."
+      },
+      {
+        "source_url": "https://aoplweb.in/contact",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Request Your Free 360° Digital Growth Audit — 🔒 100% Confidential. Inquiries are dispatched directly to absoluteonlinhyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.in/contact-us",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Ignite Your Digital Growth. Dominate Local Search & Win More Customers. — AOPL Web (aoplweb.in) is Hyderabad's premier Internet marketing, bespoke web design, and local SEO ranking network empowering local businesses to outrank competitors and scale revenues."
+      },
+      {
+        "source_url": "https://aoplweb.in/contact-us",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Request Your Free 360° Digital Growth Audit — 🔒 100% Confidential. Inquiries are dispatched directly to absoluteonlinhyd@gmail.com"
+      }
+    ]
+  },
+  {
+    "email": "aditya.nair@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.045Z",
+    "last_seen_at": "2026-10-09T06:36:51.040Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Aditya Nair — Aditya NairCSDaditya.nair@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "admin@graylogictech.com",
+    "company_key": "graylogictech.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Careers",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 85,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (graylogictech.com)",
+      "+10 found on a about/careers/contact page",
+      "+10 seen on 6 pages",
+      "Type Careers: listed on the careers page",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:35:44.072Z",
+    "last_seen_at": "2026-10-09T06:35:44.091Z",
+    "evidence": [
+      {
+        "source_url": "https://www.graylogictech.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Web and Mobile Application Development Company India admin@graylogictech.com"
+      },
+      {
+        "source_url": "https://www.graylogictech.com/about",
+        "page_type": "about",
+        "method": "mailto",
+        "context_snippet": "Web and Mobile Application Development Company India admin@graylogictech.com"
+      },
+      {
+        "source_url": "https://www.graylogictech.com/aboutus/",
+        "page_type": "about",
+        "method": "mailto",
+        "context_snippet": "Web and Mobile Application Development Company India admin@graylogictech.com"
+      },
+      {
+        "source_url": "https://www.graylogictech.com/careers/",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "Web and Mobile Application Development Company India admin@graylogictech.com"
+      },
+      {
+        "source_url": "https://www.graylogictech.com/contact",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Web and Mobile Application Development Company India admin@graylogictech.com"
+      },
+      {
+        "source_url": "https://www.graylogictech.com/contactus/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Web and Mobile Application Development Company India admin@graylogictech.com"
+      },
+      {
+        "source_url": "https://www.graylogictech.com/contactus/",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Mail for information — Mail for information admin@graylogictech.com"
+      }
+    ]
+  },
+  {
+    "email": "adyansh.kakran@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.953Z",
+    "last_seen_at": "2026-10-09T06:36:50.948Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Adyansh Kakran — Adyansh KakranCSDadyansh.kakran@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "agrim.mittal@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.052Z",
+    "last_seen_at": "2026-10-09T06:36:51.047Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Agrim Mittal — Agrim MittalCSEagrim.mittal@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "akhila.matathammal@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.947Z",
+    "last_seen_at": "2026-10-09T06:36:50.942Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Akhila Matathammal — Akhila MatathammalPhD CSEakhila.matathammal@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "amar.banerjee@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.054Z",
+    "last_seen_at": "2026-10-09T06:36:51.049Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Amar Banerjee — Amar BanerjeePhD CSEamar.banerjee@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "amey.karan@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.953Z",
+    "last_seen_at": "2026-10-09T06:36:50.948Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Amey Karan — Amey KaranCSDamey.karan@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "ananya.halgatti@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.053Z",
+    "last_seen_at": "2026-10-09T06:36:51.048Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Ananya Vishal Halgatti — Ananya Vishal HalgattiCSEananya.halgatti@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "aneetta.sara@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.945Z",
+    "last_seen_at": "2026-10-09T06:36:50.939Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Aneetta Sara — Aneetta SaraPhD CSEaneetta.sara@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "anvithraj.basani@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.053Z",
+    "last_seen_at": "2026-10-09T06:36:51.048Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Anvithraj Reddy Basani — Anvithraj Reddy BasaniCSEanvithraj.basani@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "arihant.tripathy@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 75,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "+5 seen on 2 pages",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.033Z",
+    "last_seen_at": "2026-10-09T06:36:51.054Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Arihant Tripathy — Arihant TripathyCSDarihant.tripathy@research.iiit.ac.in"
+      },
+      {
+        "source_url": "https://serc.iiit.ac.in/people/arihant-tripathy/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Research Interests — arihant.tripathy@research.iiit.ac.inResearch InterestsGreen AISoftware SustainibilityConnectLinkedInGoogle ScholarWebsiteGitHub"
+      }
+    ]
+  },
+  {
+    "email": "arushi.tandon@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.048Z",
+    "last_seen_at": "2026-10-09T06:36:51.043Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Arushi Tandon — Arushi TandonCSDarushi.tandon@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "arya.marda@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.056Z",
+    "last_seen_at": "2026-10-09T06:36:51.050Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Arya Marda — Arya MardaECEarya.marda@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "aryan.mishra@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.045Z",
+    "last_seen_at": "2026-10-09T06:36:51.040Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Aryan Mishra — Aryan MishraLCDaryan.mishra@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "aviral.gupta@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 75,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "+5 seen on 2 pages",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.042Z",
+    "last_seen_at": "2026-10-09T06:36:51.054Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Aviral Gupta — Aviral GuptaCSDaviral.gupta@research.iiit.ac.in"
+      },
+      {
+        "source_url": "https://serc.iiit.ac.in/people/aviral-gupta/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Research Interests — aviral.gupta@research.iiit.ac.inResearch InterestsSoftware ArchitectureAI4SEConnectGitHubLinkedInWebsite"
+      }
+    ]
+  },
+  {
+    "email": "bassam.adnan@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.953Z",
+    "last_seen_at": "2026-10-09T06:36:50.948Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Bassam Adnan — Bassam AdnanCSDbassam.adnan@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "brahma.reddy@researc.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.948Z",
+    "last_seen_at": "2026-10-09T06:36:50.943Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Brahma Reddy Korraprolu — Brahma Reddy KorraproluPhD CSEbrahma.reddy@researc.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "careers@linkfields.com",
+    "company_key": "linkfields.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Careers",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 85,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (linkfields.com)",
+      "+10 found on a contact page",
+      "Type Careers: address name \"careers\" indicates Careers",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:48:19.141Z",
+    "last_seen_at": "2026-10-12T06:48:19.147Z",
+    "evidence": [
+      {
+        "source_url": "https://www.linkfields.com/contact-us",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "CAREERS — CAREERScareers@linkfields.comSalessales@linkfields.comAdditional infoinfo@linkfields.com"
+      }
+    ]
+  },
+  {
+    "email": "careers@staging.digitalmojo.in",
+    "company_key": "digitalmojo.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Careers",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 75,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+15 displayed as visible page text",
+      "+25 email domain matches company website (digitalmojo.in)",
+      "+10 found on a careers page",
+      "Type Careers: address name \"careers\" indicates Careers",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:49:02.269Z",
+    "last_seen_at": "2026-10-12T06:49:02.266Z",
+    "evidence": [
+      {
+        "source_url": "https://digitalmojo.in/careers/",
+        "page_type": "careers",
+        "method": "text",
+        "context_snippet": "Careers — Join Digital Mojo and build a career in fast-growing digital marketing. We're hiring strategists, copywriters, designers, video producers, Google Ads specialists, and developers. Full-time and freelance roles. Hyderabad-based with remote-friendly culture. Competitive salaries, health insurance, grow…"
+      }
+    ]
+  },
+  {
+    "email": "chandrasekar.s@research.iiiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 0,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 30,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "-15 email domain research.iiiit.ac.in differs from company website serc.iiit.ac.in",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.946Z",
+    "last_seen_at": "2026-10-09T06:36:50.941Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Chandrasekar S — Chandrasekar SPhD CSEchandrasekar.s@research.iiiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "contact@foinixdigital.in",
+    "company_key": "foinixdigital.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 85,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (foinixdigital.in)",
+      "+10 found on a about/contact page",
+      "+10 seen on 4 pages",
+      "Type General Contact: address name \"contact\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:48:34.218Z",
+    "last_seen_at": "2026-10-12T06:48:34.230Z",
+    "evidence": [
+      {
+        "source_url": "https://foinixdigital.in/",
+        "page_type": "home",
+        "method": "text",
+        "context_snippet": "Get In Touch — 2-89/1/7/4/2, Journalists Colony Phase 3, Gachibowli, Hyderabad, Telangana 500019 contact@foinixdigital.in foinixdigitalservices@gmail.com +91 9441100849 +1 (213) 286-8887"
+      },
+      {
+        "source_url": "https://foinixdigital.in/about/",
+        "page_type": "about",
+        "method": "mailto",
+        "context_snippet": "Foinix Leadership Team — Gachibowli, Hyderabad 500019 +91 9441100849 contact@foinixdigital.in"
+      },
+      {
+        "source_url": "https://foinixdigital.in/about/",
+        "page_type": "about",
+        "method": "text",
+        "context_snippet": "Get In Touch — 2-89/1/7/4/2, Journalists Colony Phase 3, Gachibowli, Hyderabad, Telangana 500019 contact@foinixdigital.in foinixdigitalservices@gmail.com +91 9441100849 +1 (213) 286-8887"
+      },
+      {
+        "source_url": "https://foinixdigital.in/contact/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Direct Connect — 2-89/1/7/4/2, Journalists Colony Phase 3, Gachibowli, Hyderabad, Telangana 500019 contact@foinixdigital.in foinixdigitalservices@gmail.com +91 9441100849 +1 (213) 286-8887"
+      },
+      {
+        "source_url": "https://foinixdigital.in/contact/",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Get In Touch — 2-89/1/7/4/2, Journalists Colony Phase 3, Gachibowli, Hyderabad, Telangana 500019 contact@foinixdigital.in foinixdigitalservices@gmail.com +91 9441100849 +1 (213) 286-8887"
+      },
+      {
+        "source_url": "https://foinixdigital.in/ppc-marketing-services/",
+        "page_type": "other",
+        "method": "text",
+        "context_snippet": "Get In Touch — 2-89/1/7/4/2, Journalists Colony Phase 3, Gachibowli, Hyderabad, Telangana 500019 contact@foinixdigital.in foinixdigitalservices@gmail.com +91 9441100849 +1 (213) 286-8887"
+      }
+    ]
+  },
+  {
+    "email": "contact@unifytech.com",
+    "company_key": "unifytech.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 75,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (unifytech.com)",
+      "+10 found on a contact page",
+      "Type General Contact: address name \"contact\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:49:20.259Z",
+    "last_seen_at": "2026-10-12T06:49:20.260Z",
+    "evidence": [
+      {
+        "source_url": "https://www.unifytech.com/company/contact-us/get-in-touch",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "+1 425.394.2250+91 949.369.2255contact@unifytech.comInfo@unifytech.com800 Bellevue Way NE Ste 500,​Bellevue, WA 98004"
+      }
+    ]
+  },
+  {
+    "email": "contact@unwiredlabs.com",
+    "company_key": "unwiredlabs.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 75,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (unwiredlabs.com)",
+      "+10 found on a contact page",
+      "Type General Contact: address name \"contact\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:35:57.799Z",
+    "last_seen_at": "2026-10-09T06:35:57.794Z",
+    "evidence": [
+      {
+        "source_url": "https://unwiredlabs.com/contact",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Don’t hesitate to ask us something. Fill out the form or email us at contact@unwiredlabs.com."
+      }
+    ]
+  },
+  {
+    "email": "dharmineni.y@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.955Z",
+    "last_seen_at": "2026-10-09T06:36:50.950Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Yashaswinee Dharmineni — Yashaswinee DharmineniCSDdharmineni.y@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "dhiraj.shanmukha@research.iiiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 0,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 30,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "-15 email domain research.iiiit.ac.in differs from company website serc.iiit.ac.in",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.055Z",
+    "last_seen_at": "2026-10-09T06:36:51.049Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Dhiraj V — Dhiraj VMS (CSE)dhiraj.shanmukha@research.iiiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "dileepkumar.adari@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.052Z",
+    "last_seen_at": "2026-10-09T06:36:51.047Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Dileep Kumar Adari — Dileep Kumar AdariCSEdileepkumar.adari@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "divij.d@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.055Z",
+    "last_seen_at": "2026-10-09T06:36:51.050Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Divij D — AlumniDivij DCSEdivij.d@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "divijh.mangtani@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.046Z",
+    "last_seen_at": "2026-10-09T06:36:51.041Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Divijh K Mangtani — Divijh K MangtaniCSDdivijh.mangtani@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "divyanshp1136@gmail.com",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 0,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 30,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "-15 email domain gmail.com differs from company website serc.iiit.ac.in",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.052Z",
+    "last_seen_at": "2026-10-09T06:36:51.047Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Divyansh Pandey — Divyansh PandeyCSEdivyanshp1136@gmail.com"
+      }
+    ]
+  },
+  {
+    "email": "foinixdigitalservices@gmail.com",
+    "company_key": "foinixdigital.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 0,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 40,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "-15 email domain gmail.com differs from company website foinixdigital.in",
+      "+10 found on a about/contact page",
+      "+10 seen on 4 pages",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:48:34.232Z",
+    "last_seen_at": "2026-10-12T06:48:34.230Z",
+    "evidence": [
+      {
+        "source_url": "https://foinixdigital.in/",
+        "page_type": "home",
+        "method": "text",
+        "context_snippet": "Get In Touch — 2-89/1/7/4/2, Journalists Colony Phase 3, Gachibowli, Hyderabad, Telangana 500019 contact@foinixdigital.in foinixdigitalservices@gmail.com +91 9441100849 +1 (213) 286-8887"
+      },
+      {
+        "source_url": "https://foinixdigital.in/about/",
+        "page_type": "about",
+        "method": "text",
+        "context_snippet": "Get In Touch — 2-89/1/7/4/2, Journalists Colony Phase 3, Gachibowli, Hyderabad, Telangana 500019 contact@foinixdigital.in foinixdigitalservices@gmail.com +91 9441100849 +1 (213) 286-8887"
+      },
+      {
+        "source_url": "https://foinixdigital.in/contact/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Direct Connect — 2-89/1/7/4/2, Journalists Colony Phase 3, Gachibowli, Hyderabad, Telangana 500019 contact@foinixdigital.in foinixdigitalservices@gmail.com +91 9441100849 +1 (213) 286-8887"
+      },
+      {
+        "source_url": "https://foinixdigital.in/contact/",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Get In Touch — 2-89/1/7/4/2, Journalists Colony Phase 3, Gachibowli, Hyderabad, Telangana 500019 contact@foinixdigital.in foinixdigitalservices@gmail.com +91 9441100849 +1 (213) 286-8887"
+      },
+      {
+        "source_url": "https://foinixdigital.in/ppc-marketing-services/",
+        "page_type": "other",
+        "method": "text",
+        "context_snippet": "Get In Touch — 2-89/1/7/4/2, Journalists Colony Phase 3, Gachibowli, Hyderabad, Telangana 500019 contact@foinixdigital.in foinixdigitalservices@gmail.com +91 9441100849 +1 (213) 286-8887"
+      }
+    ]
+  },
+  {
+    "email": "global@devlogix.com.pk",
+    "company_key": "devlogix.com.pk",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 60,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+15 displayed as visible page text",
+      "+25 email domain matches company website (devlogix.com.pk)",
+      "+10 found on a contact page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:36:14.936Z",
+    "last_seen_at": "2026-10-09T06:36:14.935Z",
+    "evidence": [
+      {
+        "source_url": "https://devlogix.com.pk/contact",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Initiate The Dialogue. — Electronic Mailglobal@devlogix.com.pkGlobal HQGujranwala, Pakistan.Secure Line+92 332 000 5121"
+      }
+    ]
+  },
+  {
+    "email": "globe@qode.com",
+    "company_key": "fleetronix.io",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Careers",
+    "syntax_valid": 1,
+    "domain_matches_company": 0,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 45,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "-15 email domain qode.com differs from company website fleetronix.io",
+      "+10 found on a careers/leadership/contact page",
+      "+10 seen on 6 pages",
+      "Type Careers: listed on the careers page",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:48:31.876Z",
+    "last_seen_at": "2026-10-12T06:48:31.880Z",
+    "evidence": [
+      {
+        "source_url": "https://fleetronix.io/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Reasons to partner with Fleetronix — You can find us at 94 Roa Malaka, West Jakarta City Get in touch with us globe@qode.com"
+      },
+      {
+        "source_url": "https://fleetronix.io/career/",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "Welcome to the Future of Transportation — You can find us at 94 Roa Malaka, West Jakarta City Get in touch with us globe@qode.com"
+      },
+      {
+        "source_url": "https://fleetronix.io/fuel-management-solutions/",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "Fuel Management Solutions — You can find us at 94 Roa Malaka, West Jakarta City Get in touch with us globe@qode.com"
+      },
+      {
+        "source_url": "https://fleetronix.io/get-in-touch/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Our Information — You can find us at 94 Roa Malaka, West Jakarta City Get in touch with us globe@qode.com"
+      },
+      {
+        "source_url": "https://fleetronix.io/indias-alarming-road-accident-rates-how-fleet-management-can-help/",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "India’s Alarming Road Accident Rates: How Fleet Management Can Help — You can find us at 94 Roa Malaka, West Jakarta City Get in touch with us globe@qode.com"
+      },
+      {
+        "source_url": "https://fleetronix.io/navigating-the-road-ahead-the-evolution-of-fleet-management-in-india/",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "Navigating the Road Ahead: The Evolution of Fleet Management in India — You can find us at 94 Roa Malaka, West Jakarta City Get in touch with us globe@qode.com"
+      }
+    ]
+  },
+  {
+    "email": "gnaneswar.kulindala@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.953Z",
+    "last_seen_at": "2026-10-09T06:36:50.949Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Gnaneswar Kulindala — Gnaneswar KulindalaECDgnaneswar.kulindala@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "gursahib.singh@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.049Z",
+    "last_seen_at": "2026-10-09T06:36:51.043Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Gursahib Singh — Gursahib SinghLCDgursahib.singh@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "haala.a@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.950Z",
+    "last_seen_at": "2026-10-09T06:36:50.945Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Haala Deeba Abbas — Haala Deeba AbbasPhD CSEhaala.a@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "hardik.chadha@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.046Z",
+    "last_seen_at": "2026-10-09T06:36:51.041Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Hardik Chadha — Hardik ChadhaCSDhardik.chadha@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "hcm@bizionictech.com",
+    "company_key": "bizionictech.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Careers",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 85,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (bizionictech.com)",
+      "+10 found on a contact/careers/leadership page",
+      "+10 seen on 6 pages",
+      "Type Careers: listed on the careers page",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:48:43.689Z",
+    "last_seen_at": "2026-10-12T06:48:43.701Z",
+    "evidence": [
+      {
+        "source_url": "https://www.bizionictech.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "or email us at — Human Capital Management:hcm@bizionictech.com"
+      },
+      {
+        "source_url": "https://www.bizionictech.com/hire/developer/blockchain/smart-contact",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "or email us at — Human Capital Management:hcm@bizionictech.com"
+      },
+      {
+        "source_url": "https://www.bizionictech.com/job-opportunities",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "or email us at — Human Capital Management:hcm@bizionictech.com"
+      },
+      {
+        "source_url": "https://www.bizionictech.com/services/expertise/marketing/content-management",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "or email us at — Human Capital Management:hcm@bizionictech.com"
+      },
+      {
+        "source_url": "https://www.bizionictech.com/services/expertise/technology/cloud-infrastructure",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "or email us at — Human Capital Management:hcm@bizionictech.com"
+      },
+      {
+        "source_url": "https://www.bizionictech.com/services/expertise/technology/project-management",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "or email us at — Human Capital Management:hcm@bizionictech.com"
+      }
+    ]
+  },
+  {
+    "email": "hello@perceptive-analytics.com",
+    "company_key": "perceptive-analytics.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 85,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (perceptive-analytics.com)",
+      "+10 found on a about/careers/team page",
+      "+10 seen on 4 pages",
+      "Type General Contact: address name \"hello\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:37:27.805Z",
+    "last_seen_at": "2026-10-09T06:37:27.805Z",
+    "evidence": [
+      {
+        "source_url": "https://www.perceptive-analytics.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "contact — hello@perceptive-analytics.com 646.583.0001"
+      },
+      {
+        "source_url": "https://www.perceptive-analytics.com/about/",
+        "page_type": "about",
+        "method": "mailto",
+        "context_snippet": "contact — hello@perceptive-analytics.com 646.583.0001"
+      },
+      {
+        "source_url": "https://www.perceptive-analytics.com/careers/",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "contact — hello@perceptive-analytics.com 646.583.0001"
+      },
+      {
+        "source_url": "https://www.perceptive-analytics.com/our-team/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "contact — hello@perceptive-analytics.com 646.583.0001"
+      }
+    ]
+  },
+  {
+    "email": "hiya.bhatt@research.iiiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 0,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 30,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "-15 email domain research.iiiit.ac.in differs from company website serc.iiit.ac.in",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.056Z",
+    "last_seen_at": "2026-10-09T06:36:51.051Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Hiya Bhatt — Hiya BhattMS (CSE)hiya.bhatt@research.iiiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "hrigved.naidu@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.951Z",
+    "last_seen_at": "2026-10-09T06:36:50.946Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Hrigved Naidu — Hrigved NaiduMS (CSE)hrigved.naidu@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "info@aoplweb.com",
+    "company_key": "aoplweb.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 85,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (aoplweb.com)",
+      "+10 found on a about/leadership/contact page",
+      "+10 seen on 4 pages",
+      "Type General Contact: address name \"info\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:35:45.543Z",
+    "last_seen_at": "2026-10-09T06:35:45.543Z",
+    "evidence": [
+      {
+        "source_url": "https://aoplweb.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Frequently Asked Questions — Simply fill out the inquiry form below, send an email to info@aoplweb.com, or instantly chat with our senior strategists on WhatsApp or phone at +91 8885411511."
+      },
+      {
+        "source_url": "https://aoplweb.com/",
+        "page_type": "home",
+        "method": "text",
+        "context_snippet": "Contact Info — info@aoplweb.com / Absoluteonlinehyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.com/about/",
+        "page_type": "about",
+        "method": "text",
+        "context_snippet": "Contact Info — info@aoplweb.com / Absoluteonlinehyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.com/best-school-management-softwares-in-hyderabad/",
+        "page_type": "leadership",
+        "method": "text",
+        "context_snippet": "Contact Info — info@aoplweb.com / Absoluteonlinehyd@gmail.com"
+      },
+      {
+        "source_url": "https://aoplweb.com/contact-us/",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Email Address : — info@aoplweb.com / absoluteonlinehyd@gmail.com"
+      }
+    ]
+  },
+  {
+    "email": "info@bizionictech.com",
+    "company_key": "bizionictech.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 85,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (bizionictech.com)",
+      "+10 found on a contact/careers/leadership page",
+      "+10 seen on 6 pages",
+      "Type General Contact: address name \"info\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:48:43.689Z",
+    "last_seen_at": "2026-10-12T06:48:43.702Z",
+    "evidence": [
+      {
+        "source_url": "https://www.bizionictech.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "or email us at — Let's Build Together:info@bizionictech.com"
+      },
+      {
+        "source_url": "https://www.bizionictech.com/hire/developer/blockchain/smart-contact",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "or email us at — Let's Build Together:info@bizionictech.com"
+      },
+      {
+        "source_url": "https://www.bizionictech.com/job-opportunities",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "or email us at — Let's Build Together:info@bizionictech.com"
+      },
+      {
+        "source_url": "https://www.bizionictech.com/services/expertise/marketing/content-management",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "or email us at — Let's Build Together:info@bizionictech.com"
+      },
+      {
+        "source_url": "https://www.bizionictech.com/services/expertise/technology/cloud-infrastructure",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "or email us at — Let's Build Together:info@bizionictech.com"
+      },
+      {
+        "source_url": "https://www.bizionictech.com/services/expertise/technology/project-management",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "or email us at — Let's Build Together:info@bizionictech.com"
+      }
+    ]
+  },
+  {
+    "email": "info@chartingnow.com",
+    "company_key": "chartingnow.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 75,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (chartingnow.com)",
+      "+10 found on a contact page",
+      "Type General Contact: address name \"info\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:49:03.753Z",
+    "last_seen_at": "2026-10-12T06:49:03.751Z",
+    "evidence": [
+      {
+        "source_url": "https://chartingnow.com/contact/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Registered Address — Emailinfo@chartingnow.com sarath.chandra@chartingnow.com Phone+91 9885564260 Duns#​860280524"
+      }
+    ]
+  },
+  {
+    "email": "info@digitalmojo.in",
+    "company_key": "digitalmojo.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 85,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (digitalmojo.in)",
+      "+10 found on a about/careers/contact page",
+      "+10 seen on 5 pages",
+      "Type General Contact: address name \"info\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:49:02.258Z",
+    "last_seen_at": "2026-10-12T06:49:02.268Z",
+    "evidence": [
+      {
+        "source_url": "https://digitalmojo.in/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Work inquiriesInterested in working with us?info@digitalmojo.in099083 98763"
+      },
+      {
+        "source_url": "https://digitalmojo.in/about-us/",
+        "page_type": "about",
+        "method": "mailto",
+        "context_snippet": "Work inquiriesInterested in working with us?info@digitalmojo.in099083 98763"
+      },
+      {
+        "source_url": "https://digitalmojo.in/careers/",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "Work inquiriesInterested in working with us?info@digitalmojo.in099083 98763"
+      },
+      {
+        "source_url": "https://digitalmojo.in/contact-us/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Work inquiriesInterested in working with us?info@digitalmojo.in099083 98763"
+      },
+      {
+        "source_url": "https://digitalmojo.in/services/",
+        "page_type": "other",
+        "method": "mailto",
+        "context_snippet": "Work inquiriesInterested in working with us?info@digitalmojo.in099083 98763"
+      }
+    ]
+  },
+  {
+    "email": "info@fleetronix.io",
+    "company_key": "fleetronix.io",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 85,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (fleetronix.io)",
+      "+10 found on a careers/leadership/contact page",
+      "+10 seen on 6 pages",
+      "Type General Contact: address name \"info\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:48:31.876Z",
+    "last_seen_at": "2026-10-12T06:48:31.879Z",
+    "evidence": [
+      {
+        "source_url": "https://fleetronix.io/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Contact — Phone: +91 9154301401 Email: info@fleetronix.io"
+      },
+      {
+        "source_url": "https://fleetronix.io/career/",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "Welcome to the Future of Transportation — info@fleetronix.io"
+      },
+      {
+        "source_url": "https://fleetronix.io/fuel-management-solutions/",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "Fuel Management Solutions — info@fleetronix.io"
+      },
+      {
+        "source_url": "https://fleetronix.io/get-in-touch/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Our Information — info@fleetronix.io"
+      },
+      {
+        "source_url": "https://fleetronix.io/indias-alarming-road-accident-rates-how-fleet-management-can-help/",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "India’s Alarming Road Accident Rates: How Fleet Management Can Help — info@fleetronix.io"
+      },
+      {
+        "source_url": "https://fleetronix.io/navigating-the-road-ahead-the-evolution-of-fleet-management-in-india/",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "Navigating the Road Ahead: The Evolution of Fleet Management in India — info@fleetronix.io"
+      }
+    ]
+  },
+  {
+    "email": "info@globallogic.com",
+    "company_key": "globallogic.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 75,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (globallogic.com)",
+      "+10 found on a contact page",
+      "Type General Contact: address name \"info\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:36:44.916Z",
+    "last_seen_at": "2026-10-09T06:36:44.912Z",
+    "evidence": [
+      {
+        "source_url": "https://www.globallogic.com/contact/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "E-mail — E-mail info@globallogic.com sales@globallogic.com"
+      }
+    ]
+  },
+  {
+    "email": "info@kosmiktechnologies.com",
+    "company_key": "kosmiktechnologies.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 75,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+15 displayed as visible page text",
+      "+25 email domain matches company website (kosmiktechnologies.com)",
+      "+10 found on a contact/careers page",
+      "+10 seen on 6 pages",
+      "Type General Contact: address name \"info\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:37:08.556Z",
+    "last_seen_at": "2026-10-09T06:37:08.558Z",
+    "evidence": [
+      {
+        "source_url": "https://www.kosmiktechnologies.com/",
+        "page_type": "home",
+        "method": "text",
+        "context_snippet": "Contact us — KOSMIK TECHNOLOGIES PVT.LTD 3rd Floor, Above Airtel Showroom, Opp KPHB Police Station, Near JNTU, Kukatpally, Hyderabad – 500 072. INDIA. info@kosmiktechnologies.com (+91) – 87 121 86 898"
+      },
+      {
+        "source_url": "https://www.kosmiktechnologies.com/contact-us",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Contact Info — trainings@kosmiktechnologies.com info@kosmiktechnologies.com"
+      },
+      {
+        "source_url": "https://www.kosmiktechnologies.com/contact-us/consultancy",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Contact us — KOSMIK TECHNOLOGIES PVT.LTD 3rd Floor, Above Airtel Showroom, Opp KPHB Police Station, Near JNTU, Kukatpally, Hyderabad – 500 072. INDIA. info@kosmiktechnologies.com (+91) – 87 121 86 898"
+      },
+      {
+        "source_url": "https://www.kosmiktechnologies.com/contact-us/development",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Contact us — KOSMIK TECHNOLOGIES PVT.LTD 3rd Floor, Above Airtel Showroom, Opp KPHB Police Station, Near JNTU, Kukatpally, Hyderabad – 500 072. INDIA. info@kosmiktechnologies.com (+91) – 87 121 86 898"
+      },
+      {
+        "source_url": "https://www.kosmiktechnologies.com/jobs",
+        "page_type": "careers",
+        "method": "text",
+        "context_snippet": "Contact us — KOSMIK TECHNOLOGIES PVT.LTD 3rd Floor, Above Airtel Showroom, Opp KPHB Police Station, Near JNTU, Kukatpally, Hyderabad – 500 072. INDIA. info@kosmiktechnologies.com (+91) – 87 121 86 898"
+      },
+      {
+        "source_url": "https://www.kosmiktechnologies.com/jobs/view/953",
+        "page_type": "careers",
+        "method": "text",
+        "context_snippet": "Contact us — KOSMIK TECHNOLOGIES PVT.LTD 3rd Floor, Above Airtel Showroom, Opp KPHB Police Station, Near JNTU, Kukatpally, Hyderabad – 500 072. INDIA. info@kosmiktechnologies.com (+91) – 87 121 86 898"
+      }
+    ]
+  },
+  {
+    "email": "info@linkfields.com",
+    "company_key": "linkfields.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 85,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (linkfields.com)",
+      "+10 found on a careers/about/contact/team page",
+      "+10 seen on 6 pages",
+      "Type General Contact: address name \"info\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:48:19.141Z",
+    "last_seen_at": "2026-10-12T06:48:19.150Z",
+    "evidence": [
+      {
+        "source_url": "https://www.linkfields.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Driving Innovation and Transformation — info@linkfields.com© Copyright 2026 Linkfields. All Rights ReservedPrivacy PolicyTerms of UseCookies Policyinfo@linkfields.com"
+      },
+      {
+        "source_url": "https://www.linkfields.com/careers",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "Be part of a world-leading innovative team — info@linkfields.com© Copyright 2026 Linkfields. All Rights ReservedPrivacy PolicyTerms of UseCookies Policyinfo@linkfields.com"
+      },
+      {
+        "source_url": "https://www.linkfields.com/company/news-and-articles",
+        "page_type": "about",
+        "method": "mailto",
+        "context_snippet": "News and Articles — info@linkfields.com© Copyright 2026 Linkfields. All Rights ReservedPrivacy PolicyTerms of UseCookies Policyinfo@linkfields.com"
+      },
+      {
+        "source_url": "https://www.linkfields.com/company/our-approach",
+        "page_type": "about",
+        "method": "mailto",
+        "context_snippet": "Experience directed by iteration — info@linkfields.com© Copyright 2026 Linkfields. All Rights ReservedPrivacy PolicyTerms of UseCookies Policyinfo@linkfields.com"
+      },
+      {
+        "source_url": "https://www.linkfields.com/contact-us",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "CAREERS — CAREERScareers@linkfields.comSalessales@linkfields.comAdditional infoinfo@linkfields.com"
+      },
+      {
+        "source_url": "https://www.linkfields.com/services/teams",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Persistently Innovative — info@linkfields.com© Copyright 2026 Linkfields. All Rights ReservedPrivacy PolicyTerms of UseCookies Policyinfo@linkfields.com"
+      }
+    ]
+  },
+  {
+    "email": "info@sonata-software.com",
+    "company_key": "sonata-software.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 75,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (sonata-software.com)",
+      "+10 found on a contact page",
+      "Type General Contact: address name \"info\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:36:58.562Z",
+    "last_seen_at": "2026-10-09T06:36:58.557Z",
+    "evidence": [
+      {
+        "source_url": "https://www.sonata-software.com/contact-us",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Our Global Presence — For Enquires write to us on info@sonata-software.com"
+      },
+      {
+        "source_url": "https://www.sonata-software.com/contact-us",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Contact Us — For Business/ Investor/ Media related Enquires write to us on info@sonata-software.com Or Submit the below form"
+      }
+    ]
+  },
+  {
+    "email": "info@unifytech.com",
+    "company_key": "unifytech.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "General Contact",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 65,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+15 displayed as visible page text",
+      "+25 email domain matches company website (unifytech.com)",
+      "+10 found on a contact page",
+      "Type General Contact: address name \"info\" indicates General Contact",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:49:20.260Z",
+    "last_seen_at": "2026-10-12T06:49:20.260Z",
+    "evidence": [
+      {
+        "source_url": "https://www.unifytech.com/company/contact-us/get-in-touch",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "+1 425.394.2250+91 949.369.2255contact@unifytech.comInfo@unifytech.com800 Bellevue Way NE Ste 500,​Bellevue, WA 98004"
+      }
+    ]
+  },
+  {
+    "email": "jobs.kosmik@gmail.com",
+    "company_key": "kosmiktechnologies.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Hiring",
+    "syntax_valid": 1,
+    "domain_matches_company": 0,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 45,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "-15 email domain gmail.com differs from company website kosmiktechnologies.com",
+      "+10 found on a careers page",
+      "Type Hiring: address name \"jobs.kosmik\" indicates Hiring",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:37:08.557Z",
+    "last_seen_at": "2026-10-09T06:37:08.557Z",
+    "evidence": [
+      {
+        "source_url": "https://www.kosmiktechnologies.com/jobs/view/953",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "KOSMIKTECHNOLOGIES CLASS IS ONE OF THE BEST Testing tools OFFLINE & ONLINE TRAINING INSTITUTES IN HYDERABAD, KUKATPALLY/… — Interested Candidates share your Resume to jobs.kosmik@gmail.com"
+      }
+    ]
+  },
+  {
+    "email": "kandagatla.akshith@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.048Z",
+    "last_seen_at": "2026-10-09T06:36:51.042Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Akshith Kandagatla — Akshith KandagatlaCSDkandagatla.akshith@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "karthik.vaidhyanathan@iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.941Z",
+    "last_seen_at": "2026-10-09T06:36:50.936Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Karthik Vaidhyanathan — Karthik VaidhyanathanAssistant Professorkarthik.vaidhyanathan@iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "karthikeya.aduri@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.951Z",
+    "last_seen_at": "2026-10-09T06:36:50.946Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Aduri Karthikeya — Aduri KarthikeyaMS (ECE)karthikeya.aduri@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "karthikvenkat.m@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.049Z",
+    "last_seen_at": "2026-10-09T06:36:51.044Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Karthik Venkat Malavathula — Karthik Venkat MalavathulaCSDkarthikvenkat.m@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "kritin.maddireddy@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.056Z",
+    "last_seen_at": "2026-10-09T06:36:51.051Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Kritin Maddireddy — Kritin MaddireddyCSEkritin.maddireddy@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "ksrgopal@proventuresindia.com",
+    "company_key": "proventuresindia.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 60,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (proventuresindia.com)",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:36:22.628Z",
+    "last_seen_at": "2026-10-09T06:36:22.626Z",
+    "evidence": [
+      {
+        "source_url": "https://proventuresindia.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "K.S.R.Gopal — K.S.R.Gopal PMP"
+      }
+    ]
+  },
+  {
+    "email": "laveena.jain@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.049Z",
+    "last_seen_at": "2026-10-09T06:36:51.044Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Laveena Jain — Laveena JainCSDlaveena.jain@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "likhith.kanigolla@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.950Z",
+    "last_seen_at": "2026-10-09T06:36:50.945Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Likhith Kanigolla — Likhith KanigollaMS (CSE)likhith.kanigolla@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "meet.parekh@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.054Z",
+    "last_seen_at": "2026-10-09T06:36:51.048Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Parekh Meet Vikrambhai — Parekh Meet VikrambhaiCSEmeet.parekh@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "meghana.tedla@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.055Z",
+    "last_seen_at": "2026-10-09T06:36:51.050Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Meghana Tedla — Meghana TedlaECEmeghana.tedla@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "miryala.sathvika@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.954Z",
+    "last_seen_at": "2026-10-09T06:36:50.949Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Miryala Sathvika — Miryala SathvikaCSDmiryala.sathvika@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "mohammad.wani@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.055Z",
+    "last_seen_at": "2026-10-09T06:36:51.049Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Mohammad Waqas Wani — Mohammad Waqas WaniMS (ECE)mohammad.wani@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "mohit.singh@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.040Z",
+    "last_seen_at": "2026-10-09T06:36:51.036Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Mohit Kumar Singh — Mohit Kumar SinghCSDmohit.singh@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "moida.praneeth@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.053Z",
+    "last_seen_at": "2026-10-09T06:36:51.047Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Moida Praneeth Jain — Moida Praneeth JainCSEmoida.praneeth@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "mrityunjay.k@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.944Z",
+    "last_seen_at": "2026-10-09T06:36:50.939Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Mrityunjay Kumar — Mrityunjay KumarPhD CSEmrityunjay.k@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "nandini.c@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.049Z",
+    "last_seen_at": "2026-10-09T06:36:51.044Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Nandini Chakaravarthy — Nandini ChakaravarthyCSDnandini.c@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "neha.prabhu@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.054Z",
+    "last_seen_at": "2026-10-09T06:36:51.049Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Neha Prabhu — Neha PrabhuCSEneha.prabhu@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "nitheeshchandra.y@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 75,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "+5 seen on 2 pages",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.949Z",
+    "last_seen_at": "2026-10-09T06:36:51.054Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Nitheesh Chandra Yaratapalli — Nitheesh Chandra YaratapalliPhD CSEnitheeshchandra.y@research.iiit.ac.in"
+      },
+      {
+        "source_url": "https://serc.iiit.ac.in/people/nitheesh-chandra-yaratapalli/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Research Interests — nitheeshchandra.y@research.iiit.ac.inResearch InterestsDistributed SystemsFormal VerificationComputer Science Education ResearchLarge-Scale Modular ReliabilityAlgorithm DesignConnectGitHubLinkedIn"
+      }
+    ]
+  },
+  {
+    "email": "paridhi.mittal@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.951Z",
+    "last_seen_at": "2026-10-09T06:36:50.946Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Paridhi Mittal — Paridhi MittalMS (CSE)paridhi.mittal@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "pavan.harshit@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.058Z",
+    "last_seen_at": "2026-10-09T06:36:51.053Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Pavan Harshit Chinta — Pavan Harshit ChintaResearch Engineerpavan.harshit@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "pavitra.pinninti@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.954Z",
+    "last_seen_at": "2026-10-09T06:36:50.949Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Pavitra Pinninti — Pavitra PinnintiCSDpavitra.pinninti@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "payel.das@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.058Z",
+    "last_seen_at": "2026-10-09T06:36:51.053Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Payel Das — Payel DasResearch Associatepayel.das@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "poojitha.j@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.054Z",
+    "last_seen_at": "2026-10-09T06:36:51.048Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Poojitha J — Poojitha JCSEpoojitha.j@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "prabhav.shetty@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.954Z",
+    "last_seen_at": "2026-10-09T06:36:50.949Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Prabhav Shetty — Prabhav ShettyCSDprabhav.shetty@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "prakhar.jain@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.952Z",
+    "last_seen_at": "2026-10-09T06:36:50.947Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Prakhar Jain — Prakhar JainLCDprakhar.jain@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "pranav.reddy@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.058Z",
+    "last_seen_at": "2026-10-09T06:36:51.053Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Pranav Reddy Muttannagaru — Pranav Reddy Muttannagaru Research Engineerpranav.reddy@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "pranavswarup.kumar@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.047Z",
+    "last_seen_at": "2026-10-09T06:36:51.042Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Pranav Swarup Kumar — Pranav Swarup KumarCSDpranavswarup.kumar@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "prashanth@proventuresindia.com",
+    "company_key": "proventuresindia.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 60,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (proventuresindia.com)",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:36:22.629Z",
+    "last_seen_at": "2026-10-09T06:36:22.626Z",
+    "evidence": [
+      {
+        "source_url": "https://proventuresindia.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Vijay Prashanth M — Vijay Prashanth M PMP, PMI-PBA, MCP, CSM"
+      }
+    ]
+  },
+  {
+    "email": "privacy@globallogic.com",
+    "company_key": "globallogic.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 50,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (globallogic.com)",
+      "+10 found on a careers page",
+      "Type Other: address name \"privacy\" is a privacy/legal/support/sales inbox, not a hiring contact (-20)",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:36:44.918Z",
+    "last_seen_at": "2026-10-09T06:36:44.912Z",
+    "evidence": [
+      {
+        "source_url": "https://www.globallogic.com/careers/",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "We answer your questions — To exercise your rights, please contact us at privacy@globallogic.com or by other means as convenient for you. Please read more about this process in our Recruitment Privacy Notice."
+      }
+    ]
+  },
+  {
+    "email": "priyanka.agarwal@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.054Z",
+    "last_seen_at": "2026-10-09T06:36:51.049Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Priyanka Agarwal — Priyanka AgarwalCSEpriyanka.agarwal@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "puru.ojha@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.950Z",
+    "last_seen_at": "2026-10-09T06:36:50.945Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Puru Ojha — Puru OjhaMS (CSE)puru.ojha@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "radha.krishna@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.949Z",
+    "last_seen_at": "2026-10-09T06:36:50.944Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Radha Krishna B — Radha Krishna BPhD CSEradha.krishna@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "raghu.reddy@iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.940Z",
+    "last_seen_at": "2026-10-09T06:36:50.935Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Raghu Reddy — Raghu ReddyAssociate Professor and Center Headraghu.reddy@iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "raman.saxena@iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.941Z",
+    "last_seen_at": "2026-10-09T06:36:50.935Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Raman Saxena — Raman SaxenaProfessorraman.saxena@iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "ramesh.loganathan@iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.942Z",
+    "last_seen_at": "2026-10-09T06:36:50.937Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Ramesh Loganathan — Ramesh LoganathanProfessor of Practiceramesh.loganathan@iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "rkmandan@proventuresindia.com",
+    "company_key": "proventuresindia.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 60,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (proventuresindia.com)",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:36:22.628Z",
+    "last_seen_at": "2026-10-09T06:36:22.626Z",
+    "evidence": [
+      {
+        "source_url": "https://proventuresindia.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Mr. R K Mandan — Mr. R K Mandan PMP, CSM"
+      }
+    ]
+  },
+  {
+    "email": "rudra.choudhary@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.044Z",
+    "last_seen_at": "2026-10-09T06:36:51.039Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Rudra Choudhary — Rudra ChoudharyLCDrudra.choudhary@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "rudra.dhar@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.949Z",
+    "last_seen_at": "2026-10-09T06:36:50.944Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Rudra Dhar — Rudra DharPhD CSErudra.dhar@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "sales@globallogic.com",
+    "company_key": "globallogic.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 50,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (globallogic.com)",
+      "+10 found on a contact page",
+      "Type Other: address name \"sales\" is a privacy/legal/support/sales inbox, not a hiring contact (-20)",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:36:44.917Z",
+    "last_seen_at": "2026-10-09T06:36:44.912Z",
+    "evidence": [
+      {
+        "source_url": "https://www.globallogic.com/contact/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "E-mail — E-mail info@globallogic.com sales@globallogic.com"
+      }
+    ]
+  },
+  {
+    "email": "sales@linkfields.com",
+    "company_key": "linkfields.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 50,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (linkfields.com)",
+      "+10 found on a contact page",
+      "Type Other: address name \"sales\" is a privacy/legal/support/sales inbox, not a hiring contact (-20)",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:48:19.141Z",
+    "last_seen_at": "2026-10-12T06:48:19.148Z",
+    "evidence": [
+      {
+        "source_url": "https://www.linkfields.com/contact-us",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "CAREERS — CAREERScareers@linkfields.comSalessales@linkfields.comAdditional infoinfo@linkfields.com"
+      }
+    ]
+  },
+  {
+    "email": "sales@transguard.in",
+    "company_key": "transguard.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 60,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (transguard.in)",
+      "+10 found on a about/careers/contact page",
+      "+10 seen on 4 pages",
+      "Type Other: address name \"sales\" is a privacy/legal/support/sales inbox, not a hiring contact (-20)",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:49:13.925Z",
+    "last_seen_at": "2026-10-12T06:49:13.927Z",
+    "evidence": [
+      {
+        "source_url": "http://www.transguard.in/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "sales@transguard.in"
+      },
+      {
+        "source_url": "http://www.transguard.in/about-us/",
+        "page_type": "about",
+        "method": "mailto",
+        "context_snippet": "sales@transguard.in"
+      },
+      {
+        "source_url": "http://www.transguard.in/careers/",
+        "page_type": "careers",
+        "method": "mailto",
+        "context_snippet": "sales@transguard.in"
+      },
+      {
+        "source_url": "http://www.transguard.in/contact-us/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "sales@transguard.in"
+      },
+      {
+        "source_url": "http://www.transguard.in/contact-us/",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Please contact us, and we will respond as soon as possible. — Please contact us, and we will respond as soon as possible. Address: Transguard Electrical SystemsPlot 74, Survey 285 – 288, KK Owners Society, IDA Jeedimetla,Hyderabad, Telangana 500055 Email:sales@transguard.in"
+      }
+    ]
+  },
+  {
+    "email": "samarth.jain@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.048Z",
+    "last_seen_at": "2026-10-09T06:36:51.043Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Samarth Jain — Samarth JainCSDsamarth.jain@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "sambu.aneesh@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.953Z",
+    "last_seen_at": "2026-10-09T06:36:50.948Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Aneesh Sambu — Aneesh SambuCSDsambu.aneesh@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "sarath.chandra@chartingnow.com",
+    "company_key": "chartingnow.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (chartingnow.com)",
+      "+10 found on a contact page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-12T06:49:03.753Z",
+    "last_seen_at": "2026-10-12T06:49:03.752Z",
+    "evidence": [
+      {
+        "source_url": "https://chartingnow.com/contact/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Registered Address — Emailinfo@chartingnow.com sarath.chandra@chartingnow.com Phone+91 9885564260 Duns#​860280524"
+      }
+    ]
+  },
+  {
+    "email": "seenivasan@proventuresindia.com",
+    "company_key": "proventuresindia.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 60,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (proventuresindia.com)",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:36:22.627Z",
+    "last_seen_at": "2026-10-09T06:36:22.625Z",
+    "evidence": [
+      {
+        "source_url": "https://proventuresindia.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "P. Seenivasan — P. Seenivasan PMP, PgMP, PfMP"
+      }
+    ]
+  },
+  {
+    "email": "serc.admin@iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 80,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a contact/team page",
+      "+10 seen on 6 pages",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.940Z",
+    "last_seen_at": "2026-10-09T06:36:51.054Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Follow Us — Software Engineering Research CenterIIIT HyderabadTelangana, Indiaserc.admin@iiit.ac.in"
+      },
+      {
+        "source_url": "https://serc.iiit.ac.in/contact/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Follow Us — Software Engineering Research CenterIIIT HyderabadTelangana, Indiaserc.admin@iiit.ac.in"
+      },
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Follow Us — Software Engineering Research CenterIIIT HyderabadTelangana, Indiaserc.admin@iiit.ac.in"
+      },
+      {
+        "source_url": "https://serc.iiit.ac.in/people/arihant-tripathy/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Follow Us — Software Engineering Research CenterIIIT HyderabadTelangana, Indiaserc.admin@iiit.ac.in"
+      },
+      {
+        "source_url": "https://serc.iiit.ac.in/people/aviral-gupta/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Follow Us — Software Engineering Research CenterIIIT HyderabadTelangana, Indiaserc.admin@iiit.ac.in"
+      },
+      {
+        "source_url": "https://serc.iiit.ac.in/people/nitheesh-chandra-yaratapalli/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Follow Us — Software Engineering Research CenterIIIT HyderabadTelangana, Indiaserc.admin@iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "shailender.goyal@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.954Z",
+    "last_seen_at": "2026-10-09T06:36:50.949Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Shailender Goyal — Shailender GoyalCSDshailender.goyal@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "shambhavi.jahagirdar@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.955Z",
+    "last_seen_at": "2026-10-09T06:36:50.950Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Shambhavi Jahagirdar — shambhavi.jahagirdar@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "shaunak.biswas@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.955Z",
+    "last_seen_at": "2026-10-09T06:36:50.950Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Shaunak Biswas — Shaunak BiswasCSDshaunak.biswas@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "shreyash.chandak@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.047Z",
+    "last_seen_at": "2026-10-09T06:36:51.042Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Shreyash Chandak — Shreyash ChandakLCDshreyash.chandak@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "shrikara.a@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.055Z",
+    "last_seen_at": "2026-10-09T06:36:51.050Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Shrikara A — Shrikara ACSEshrikara.a@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "shubham.kulkarni@alumni.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.058Z",
+    "last_seen_at": "2026-10-09T06:36:51.053Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Kulkarni Shubham Shantanu — Kulkarni Shubham ShantanuMS (CSE)shubham.kulkarni@alumni.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "smruti.biswal@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.048Z",
+    "last_seen_at": "2026-10-09T06:36:51.043Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Smruti Biswal — Smruti BiswalECDsmruti.biswal@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "sreemaee.akshathala@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.950Z",
+    "last_seen_at": "2026-10-09T06:36:50.945Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Sreemaee Akshathala — Sreemaee AkshathalaMS (CSE)sreemaee.akshathala@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "srinivasan.r@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.949Z",
+    "last_seen_at": "2026-10-09T06:36:50.945Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Srinivasan Rakhunathan — Srinivasan RakhunathanPhD CSE (Part-Time)srinivasan.r@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "tanishi.tyagi@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.050Z",
+    "last_seen_at": "2026-10-09T06:36:51.044Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Tanishi Tyagi — Tanishi TyagiCSDtanishi.tyagi@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "tiruveedula.n@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.053Z",
+    "last_seen_at": "2026-10-09T06:36:51.048Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Nikhilesh tiruveedula — Nikhilesh tiruveedula CSEtiruveedula.n@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "trainings@kosmiktechnologies.com",
+    "company_key": "kosmiktechnologies.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 60,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+15 displayed as visible page text",
+      "+25 email domain matches company website (kosmiktechnologies.com)",
+      "+10 found on a contact page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:37:08.557Z",
+    "last_seen_at": "2026-10-09T06:37:08.557Z",
+    "evidence": [
+      {
+        "source_url": "https://www.kosmiktechnologies.com/contact-us",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "Contact Info — trainings@kosmiktechnologies.com info@kosmiktechnologies.com"
+      }
+    ]
+  },
+  {
+    "email": "trainings@proventuresindia.com",
+    "company_key": "proventuresindia.com",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 80,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (proventuresindia.com)",
+      "+10 found on a about/contact/team/leadership page",
+      "+10 seen on 6 pages",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "active",
+    "first_seen_at": "2026-10-09T06:36:22.629Z",
+    "last_seen_at": "2026-10-09T06:36:22.629Z",
+    "evidence": [
+      {
+        "source_url": "https://proventuresindia.com/",
+        "page_type": "home",
+        "method": "mailto",
+        "context_snippet": "Contact — + 91 8072437416 trainings@proventuresindia.com Flat No. 102, Nestcon Zion Hyderabad 500019"
+      },
+      {
+        "source_url": "https://proventuresindia.com/about-proventures/",
+        "page_type": "about",
+        "method": "mailto",
+        "context_snippet": "Contact — + 91 8072437416 trainings@proventuresindia.com Flat No. 102, Nestcon Zion Hyderabad 500019"
+      },
+      {
+        "source_url": "https://proventuresindia.com/contact/",
+        "page_type": "contact",
+        "method": "mailto",
+        "context_snippet": "Contact — + 91 8072437416 trainings@proventuresindia.com Flat No. 102, Nestcon Zion Hyderabad 500019"
+      },
+      {
+        "source_url": "https://proventuresindia.com/contact/",
+        "page_type": "contact",
+        "method": "text",
+        "context_snippet": "trainings@proventuresindia.com — trainings@proventuresindia.com"
+      },
+      {
+        "source_url": "https://proventuresindia.com/our-team/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Contact — + 91 8072437416 trainings@proventuresindia.com Flat No. 102, Nestcon Zion Hyderabad 500019"
+      },
+      {
+        "source_url": "https://proventuresindia.com/service/project-management-office-pmo/",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "Contact — + 91 8072437416 trainings@proventuresindia.com Flat No. 102, Nestcon Zion Hyderabad 500019"
+      },
+      {
+        "source_url": "https://proventuresindia.com/service/project-management-office-pmo/",
+        "page_type": "leadership",
+        "method": "text",
+        "context_snippet": "Mail for information: — Mail for information: trainings@proventuresindia.com"
+      },
+      {
+        "source_url": "https://proventuresindia.com/service/resource-management-using-microsoft-project-online-and-professional/",
+        "page_type": "leadership",
+        "method": "mailto",
+        "context_snippet": "Head office address: — For enrolment / additional information Contact: trainings@proventuresindia.com"
+      },
+      {
+        "source_url": "https://proventuresindia.com/service/resource-management-using-microsoft-project-online-and-professional/",
+        "page_type": "leadership",
+        "method": "text",
+        "context_snippet": "Mail for information: — Mail for information: trainings@proventuresindia.com"
+      }
+    ]
+  },
+  {
+    "email": "venkatesh.choppella@iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.941Z",
+    "last_seen_at": "2026-10-09T06:36:50.936Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Venkatesh Choppella — Venkatesh ChoppellaAssociate Professorvenkatesh.choppella@iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "vidhi.jain@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.951Z",
+    "last_seen_at": "2026-10-09T06:36:50.946Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Vidhi Jain — Vidhi JainMS (CSE)vidhi.jain@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "vijay.s@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.043Z",
+    "last_seen_at": "2026-10-09T06:36:51.038Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Vijay Arvaynthan — Vijay ArvaynthanCSDvijay.s@research.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "viswanath.iiithyd@gmail.com",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 0,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 30,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "-15 email domain gmail.com differs from company website serc.iiit.ac.in",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.942Z",
+    "last_seen_at": "2026-10-09T06:36:50.936Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Viswanath Kasturi — Viswanath KasturiResearch Professor of Eminenceviswanath.iiithyd@gmail.com"
+      }
+    ]
+  },
+  {
+    "email": "vv@iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.942Z",
+    "last_seen_at": "2026-10-09T06:36:50.936Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Vasudeva Varma — Affiliate FacultyVasudeva VarmaProfessorvv@iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "vyakhya.gupta@students.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:51.053Z",
+    "last_seen_at": "2026-10-09T06:36:51.048Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Vyakhya Gupta — Vyakhya GuptaCSEvyakhya.gupta@students.iiit.ac.in"
+      }
+    ]
+  },
+  {
+    "email": "yogesh.c@research.iiit.ac.in",
+    "company_key": "serc.iiit.ac.in",
+    "name": null,
+    "role_title": null,
+    "contact_type": "Other",
+    "syntax_valid": 1,
+    "domain_matches_company": 1,
+    "mx_checked": 0,
+    "mx_valid": null,
+    "confidence": 70,
+    "confidence_explanation": [
+      "Syntax valid (format only — not a deliverability check)",
+      "+25 published as a mailto link",
+      "+25 email domain matches company website (serc.iiit.ac.in)",
+      "+10 found on a team page",
+      "Type Other: no role evidence found",
+      "MX not checked",
+      "No mailbox-level verification performed"
+    ],
+    "status": "invalid",
+    "first_seen_at": "2026-10-09T06:36:50.952Z",
+    "last_seen_at": "2026-10-09T06:36:50.947Z",
+    "evidence": [
+      {
+        "source_url": "https://serc.iiit.ac.in/people/",
+        "page_type": "team",
+        "method": "mailto",
+        "context_snippet": "Yogesh Chandrasekharuni — Yogesh ChandrasekharuniMS (CSE)yogesh.c@research.iiit.ac.in"
+      }
+    ]
+  }
+]

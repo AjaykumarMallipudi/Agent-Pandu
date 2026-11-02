@@ -50,6 +50,14 @@ export function normalizeWebsite(input: string): { url: string; domain: string }
   return { url: `${u.protocol}//${u.host}/`, domain };
 }
 
+const INSTITUTIONAL_SUFFIXES = ['ac.in', 'edu', 'edu.in', 'gov.in', 'nic.in', 'gov', 'mil', 'ac.uk', 'edu.au', 'res.in', 'gov.uk'];
+
+/** Universities, research institutes and government bodies: not companies to cold-email for jobs. */
+export function isInstitutionalDomain(domain: string): boolean {
+  const d = normalizeHost(domain);
+  return INSTITUTIONAL_SUFFIXES.some((s) => d === s || d.endsWith(`.${s}`));
+}
+
 export function isNonOfficialDomain(domain: string): boolean {
   const d = normalizeHost(domain);
   return NON_OFFICIAL_DOMAINS.some((n) => d === n || d.endsWith(`.${n}`));

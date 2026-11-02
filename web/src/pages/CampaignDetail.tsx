@@ -52,6 +52,51 @@ function Preview({ campaignId, message }: { campaignId: number; message: Campaig
 
 const SENDING_STATES = ['sending', 'paused', 'completed', 'cancelled'];
 
+const STAGES = ['Review', 'Approve', 'Sending', 'Finished'];
+function stageIndex(status: string): number {
+  return status === 'draft' ? 0 : status === 'approved' ? 1 : status === 'sending' || status === 'paused' ? 2 : 3;
+}
+function nextHint(status: string, testMode: boolean): string {
+  switch (status) {
+    case 'draft':
+      return 'Click a recipient to preview their email. Exclude anyone you do not want, then type the confirmation below and approve.';
+    case 'approved':
+      return `Approved. Press “Start sending” (top right)${testMode ? ' — test mode is on, so emails are simulated, not sent' : ''}.`;
+    case 'sending':
+      return 'Emails are going out one at a time. You can leave this page; progress is saved. Use Pause to stop safely.';
+    case 'paused':
+      return 'Paused. Press Resume to continue.';
+    case 'completed':
+      return testMode ? 'Done (simulated). Nothing was actually sent because test mode is on.' : 'Done. See each recipient’s result below.';
+    default:
+      return 'This campaign was cancelled.';
+  }
+}
+function Stepper({ status, testMode }: { status: string; testMode: boolean }) {
+  const cur = stageIndex(status);
+  return (
+    <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+      <ol className="flex flex-wrap items-center gap-2 text-sm">
+        {STAGES.map((label, i) => (
+          <li key={label} className="flex items-center gap-2">
+            <span
+              className={cx(
+                'flex h-6 w-6 items-center justify-center rounded-full text-xs font-semibold',
+                i < cur || status === 'completed' ? 'bg-emerald-600 text-white' : i === cur ? 'bg-blue-600 text-white' : 'bg-slate-200 text-slate-500',
+              )}
+            >
+              {i < cur || status === 'completed' ? '✓' : i + 1}
+            </span>
+            <span className={i === cur ? 'font-semibold' : 'text-slate-500'}>{label}</span>
+            {i < STAGES.length - 1 && <span className="mx-1 text-slate-300">→</span>}
+          </li>
+        ))}
+      </ol>
+      <p className="mt-2 text-sm text-slate-600">{nextHint(status, testMode)}</p>
+    </div>
+  );
+}
+
 export function CampaignDetailPage() {
   const id = Number(useParams().id);
   const qc = useQueryClient();
@@ -138,6 +183,7 @@ export function CampaignDetailPage() {
         }
       />
       <div className="space-y-6">
+        <Stepper status={c.status} testMode={snap.testMode} />
         <ErrorText error={act.error ?? exclude.error ?? resolve.error} />
         {c.paused_reason && c.status === 'paused' && <Alert tone="warn" title="Paused">{c.paused_reason}</Alert>}
 

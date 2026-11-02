@@ -114,7 +114,7 @@ const STATUSES = ['', 'scanned', 'discovered', 'no_website', 'invalid_website', 
 export function CompaniesPage() {
   const { id } = useParams();
   const nav = useNavigate();
-  const [f, setF] = useState({ q: '', status: '', location: '', industry: '', page: 1 });
+  const [f, setF] = useState({ q: '', status: '', location: '', industry: '', contacts: 'with', page: 1 });
   const q = useQuery({
     queryKey: ['companies', f],
     queryFn: () => api<Paged<Company>>(`/companies${qs({ ...f, pageSize: 25 })}`),
@@ -134,7 +134,12 @@ export function CompaniesPage() {
         }
       />
       <Card className="mb-4">
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+          <select className="input" value={f.contacts} onChange={(e) => set('contacts', e.target.value)}>
+            <option value="with">With contacts</option>
+            <option value="without">Without contacts</option>
+            <option value="">All companies</option>
+          </select>
           <input className="input" placeholder="Search name or domain" value={f.q} onChange={(e) => set('q', e.target.value)} />
           <input className="input" placeholder="City, state or country" value={f.location} onChange={(e) => set('location', e.target.value)} />
           <input className="input" placeholder="Industry" value={f.industry} onChange={(e) => set('industry', e.target.value)} />

@@ -190,9 +190,10 @@ describe('OSM search (mocked Nominatim + Overpass)', () => {
     expect(res.length).toBeGreaterThan(0);
   });
 
-  it('reports unknown locations clearly', async () => {
-    mockNominatim([]);
+  it('reports unknown locations clearly after trying structured, free-text and state-less lookups', async () => {
+    const n = nock(NOMINATIM).get('/search').query(true).times(3).reply(200, []);
     await expect(drain(new OsmProvider().search(hyderabad, () => false))).rejects.toThrow(/could not find the location "Hyderabad, Telangana, India"/);
+    expect(n.isDone()).toBe(true);
   });
 
   it('reports Overpass rate limiting without retrying', async () => {
@@ -263,7 +264,7 @@ describe('regression: sparse city (Guntur) with a "Software" search', () => {
     const notes: string[] = [];
     const res = await drain(new OsmProvider().search(guntur, () => false, (n) => notes.push(n)));
     expect(res.map((r) => r.name).sort()).toEqual(['Efftronics Systems Pvt Ltd', 'Veda']);
-    expect(notes[0]).toMatch(/2 of 13 business records around GUNTUR, Andhra Pradesh, India matched "Software"; 0 have a website/);
+    expect(notes[0]).toMatch(/2 companies around GUNTUR, Andhra Pradesh, India match "Software"\. Adding 2 new \(0 with a website to scan\)/);
   });
 
   it('explains an empty result instead of silently finishing', async () => {
@@ -285,6 +286,110 @@ describe('regression: sparse city (Guntur) with a "Software" search', () => {
     // Real false positive from a live Guntur run: a government MeeSeva service centre.
     expect(matchElement({ name: 'Digital Seva', office: 'yes', website: 'https://www.meeseva.in/' }, new Set(['technology'] as const), []).matched).toBe(false);
     expect(matchElement({ name: 'Acme Softech Pvt Ltd', building: 'office' }, cats, []).matched).toBe(true);
+  });
+});
+
+describe('real-world failures from the dashboard', () => {
+  it('falls back to the backup Overpass server once when the main one returns 504', async () => {
+    setupTestEnv({ OSM_CONTACT_EMAIL: EMAIL, OSM_OVERPASS_FALLBACK_URLS: 'https://overpass.backup.example/api/interpreter' });
+    mockNominatim();
+    const main = nock(OVERPASS).post('/api/interpreter').reply(504, 'Gateway Timeout');
+    const backup = nock('https://overpass.backup.example').matchHeader('user-agent', /SmartApplytick/).post('/api/interpreter').reply(200, { elements: ELEMENTS });
+    const res = await drain(new OsmProvider().search(hyderabad, () => false));
+    expect(main.isDone() && backup.isDone()).toBe(true);
+    expect(res.length).toBeGreaterThan(0);
+  });
+
+  it('gives a clear message when every Overpass server is busy (one try each, no loops)', async () => {
+    setupTestEnv({ OSM_CONTACT_EMAIL: EMAIL, OSM_OVERPASS_FALLBACK_URLS: 'https://overpass.backup.example/api/interpreter' });
+    mockNominatim();
+    nock(OVERPASS).post('/api/interpreter').reply(504, 'busy');
+    nock('https://overpass.backup.example').post('/api/interpreter').reply(503, 'busy');
+    await expect(drain(new OsmProvider().search(hyderabad, () => false))).rejects.toThrow(/busy or having trouble \(HTTP 503\)\. Try again in a few minutes/);
+    expect(nock.pendingMocks()).toEqual([]);
+  });
+
+  it('handles "Vizag,hyd" in Andhra Pradesh: nicknames, several cities, and a wrong state', async () => {
+    setupTestEnv({ OSM_CONTACT_EMAIL: EMAIL });
+    const vizag = nock(NOMINATIM)
+      .get('/search')
+      .query((q) => q.city === 'Visakhapatnam' && q.state === 'Andhra Pradesh')
+      .reply(200, [{ osm_type: 'relation', osm_id: 1, boundingbox: ['17.6', '17.9', '83.1', '83.4'], display_name: 'Visakhapatnam' }]);
+    // Hyderabad is in Telangana: structured and free-text lookups with "Andhra Pradesh" fail, the state-less one succeeds.
+    const hydMiss = nock(NOMINATIM)
+      .get('/search')
+      .query((q) => (q.city === 'Hyderabad' && q.state === 'Andhra Pradesh') || q.q === 'Hyderabad, Andhra Pradesh, India')
+      .times(2)
+      .reply(200, []);
+    const hydHit = nock(NOMINATIM)
+      .get('/search')
+      .query((q) => q.q === 'Hyderabad, India')
+      .reply(200, [{ osm_type: 'relation', osm_id: HYD_RELATION, boundingbox: ['17.2', '17.6', '78.2', '78.7'], display_name: 'Hyderabad' }]);
+    nock(OVERPASS).post('/api/interpreter').reply(200, { elements: [ELEMENTS[1]!] });
+    nock(OVERPASS).post('/api/interpreter').reply(200, { elements: [ELEMENTS[5]!] });
+    const notes: string[] = [];
+    const c = criteriaSchema.parse({ country: 'India', state: 'Andhra Pradesh', city: 'Vizag,hyd', industry: 'Software', maxCompanies: 10 });
+    const res = await drain(new OsmProvider().search(c, () => false, (n) => notes.push(n)));
+    expect(vizag.isDone() && hydMiss.isDone() && hydHit.isDone()).toBe(true);
+    expect(res.map((r) => [r.name, r.city])).toEqual([
+      ['Hitech Infotech', 'Hyderabad'], // addr:city tag wins
+      ['Gachibowli Software Park', 'Hyderabad'],
+    ]);
+    expect(notes[0]).toMatch(/Visakhapatnam: 1 of 1 matched.*Hyderabad: 1 of 1 matched/);
+  });
+
+  it('keeps results from cities that worked when another city is not found', async () => {
+    setupTestEnv({ OSM_CONTACT_EMAIL: EMAIL });
+    mockNominatim();
+    nock(NOMINATIM).get('/search').query((q) => q.city === 'Atlantis' || /Atlantis/.test(String(q.q))).times(3).reply(200, []);
+    nock(OVERPASS).post('/api/interpreter').reply(200, { elements: ELEMENTS });
+    const notes: string[] = [];
+    const res = await drain(new OsmProvider().search({ ...hyderabad, city: 'Hyderabad, Atlantis' }, () => false, (n) => notes.push(n)));
+    expect(res.length).toBeGreaterThan(0);
+    expect(notes[0]).toMatch(/Atlantis: OpenStreetMap could not find the location/);
+  });
+
+  it('limits a run to 5 cities', () => {
+    setupTestEnv({ OSM_CONTACT_EMAIL: EMAIL });
+    expect(new OsmProvider().validate({ ...hyderabad, city: 'a,b,c,d,e,f' })).toMatch(/at most 5 cities/);
+  });
+});
+
+describe('repeat runs bring new companies', () => {
+  it('skips companies saved by earlier runs and takes the next best ones (real case: Run #6 re-found the same 25)', async () => {
+    setupTestEnv({ OSM_CONTACT_EMAIL: EMAIL });
+    // Earlier run saved Hitech Infotech (by OSM id) and the software park (by website domain).
+    const a = Number(getDb().prepare(`INSERT INTO companies (name, domain, website_url) VALUES ('Hitech Infotech', 'hitech.example', 'https://hitech.example/')`).run().lastInsertRowid);
+    getDb().prepare(`INSERT INTO company_sources (company_id, provider, provider_ref) VALUES (?, 'osm', 'node/2')`).run(a);
+    getDb().prepare(`INSERT INTO companies (name, domain, website_url) VALUES ('Park', 'park.example', 'https://park.example/')`).run();
+    mockNominatim();
+    mockOverpass(() => true);
+    const notes: string[] = [];
+    const res = await drain(new OsmProvider().search({ ...hyderabad, maxCompanies: 1 }, () => false, (n) => notes.push(n)));
+    expect(res.map((r) => r.name)).toEqual(['Deccan Ventures Labs']); // next best new one (has a website)
+    expect(notes[0]).toMatch(/4 companies around .* match .*, 2 already in your list\. Adding 1 new \(1 with a website to scan\); run again to get the next 1 of 1 remaining/);
+  });
+
+  it('says so when every match is already saved', async () => {
+    setupTestEnv({ OSM_CONTACT_EMAIL: EMAIL });
+    for (const [i, ref] of ['node/1', 'node/2', 'node/4', 'relation/6'].entries()) {
+      const id = Number(getDb().prepare(`INSERT INTO companies (name) VALUES (?)`).run(`c${i}`).lastInsertRowid);
+      getDb().prepare(`INSERT INTO company_sources (company_id, provider, provider_ref) VALUES (?, 'osm', ?)`).run(id, ref);
+    }
+    mockNominatim();
+    mockOverpass(() => true);
+    const notes: string[] = [];
+    expect(await drain(new OsmProvider().search(hyderabad, () => false, (n) => notes.push(n)))).toEqual([]);
+    expect(notes[0]).toMatch(/All 4 matching companies .* are already in your list/);
+  });
+
+  it('treats an Overpass HTTP 500 as busy and tries the backup server (real case: Visakhapatnam)', async () => {
+    setupTestEnv({ OSM_CONTACT_EMAIL: EMAIL, OSM_OVERPASS_FALLBACK_URLS: 'https://overpass.backup.example/api/interpreter' });
+    mockNominatim();
+    nock(OVERPASS).post('/api/interpreter').reply(500, 'Internal Server Error');
+    const backup = nock('https://overpass.backup.example').post('/api/interpreter').reply(200, { elements: ELEMENTS });
+    expect((await drain(new OsmProvider().search(hyderabad, () => false))).length).toBeGreaterThan(0);
+    expect(backup.isDone()).toBe(true);
   });
 });
 

@@ -87,17 +87,19 @@ export function ContactsPage() {
     minConfidence: '',
     status: '',
     companyId: params.get('companyId') ?? '',
+    bestPerCompany: true,
     page: 1,
   });
   const settings = useQuery({ queryKey: ['settings'], queryFn: () => api<SettingsView>('/settings') });
   const max = settings.data?.runtime.maxRecipientsPerCampaign ?? 50;
   const q = useQuery({
     queryKey: ['contacts', f],
-    queryFn: () => api<Paged<Contact>>(`/contacts${qs({ ...f, pageSize: 25 })}`),
+    queryFn: () =>
+      api<Paged<Contact>>(`/contacts${qs({ ...f, bestPerCompany: f.bestPerCompany ? 1 : 0, sort: f.bestPerCompany ? 'priority' : 'confidence', pageSize: 25 })}`),
     placeholderData: keepPreviousData,
   });
   const [notice, setNotice] = useState('');
-  const set = (k: keyof typeof f, v: string) => setF((p) => ({ ...p, [k]: v, page: 1 }));
+  const set = (k: Exclude<keyof typeof f, 'bestPerCompany' | 'page'>, v: string) => setF((p) => ({ ...p, [k]: v, page: 1 }));
 
   const selectable = (c: Contact) => c.eligibility === 'eligible';
   const toggle = (c: Contact) => {
@@ -119,7 +121,9 @@ export function ContactsPage() {
     if (add.length < notSelected.length) setNotice(`Selection capped at ${max} recipients.`);
   };
   const selectAllMatching = async () => {
-    const r = await api<{ ids: number[]; limit: number }>(`/contacts/eligible-ids${qs({ ...f, status: undefined, page: undefined })}`);
+    const r = await api<{ ids: number[]; limit: number }>(
+      `/contacts/eligible-ids${qs({ ...f, status: undefined, page: undefined, bestPerCompany: f.bestPerCompany ? 1 : 0 })}`,
+    );
     sel.clear();
     sel.add(r.ids);
     setNotice(`Selected ${r.ids.length} eligible contact(s) (limit ${r.limit}).`);
@@ -129,7 +133,7 @@ export function ContactsPage() {
     <>
       <PageHeader
         title="Contacts"
-        subtitle="Publicly displayed business addresses with evidence. Only eligible contacts can be selected."
+        subtitle="Publicly listed business addresses with evidence. With “one best contact per company”, you see the single best person to write to at each company (HR first)."
         actions={
           <>
             <a href={withToken(`/api/export/contacts.xlsx${sel.ids.length ? `?ids=${sel.ids.join(',')}` : ''}`)}>
@@ -161,12 +165,17 @@ export function ContactsPage() {
             <option value="">Any status</option>
             <option value="eligible">Eligible</option>
             <option value="contacted">Already contacted</option>
+            <option value="company_contacted">Company already contacted</option>
             <option value="suppressed">Suppressed</option>
             <option value="low_confidence">Low confidence</option>
             <option value="invalid">Invalid</option>
           </select>
         </div>
         <div className="mt-3 flex flex-wrap items-center gap-2 text-sm">
+          <label className="mr-2 flex items-center gap-2 rounded-lg bg-blue-50 px-3 py-2 font-medium text-blue-800">
+            <input type="checkbox" checked={f.bestPerCompany} onChange={(e) => setF((p) => ({ ...p, bestPerCompany: e.target.checked, page: 1 }))} />
+            One best contact per company
+          </label>
           <Button onClick={selectAllMatching}>Select eligible matching filters (max {max})</Button>
           {sel.ids.length > 0 && (
             <Button variant="ghost" onClick={() => sel.clear()}>
@@ -227,7 +236,12 @@ export function ContactsPage() {
                   <td className={td}>
                     <Badge color="blue">{c.contact_type}</Badge>
                   </td>
-                  <td className={td}>{c.company_name}</td>
+                  <td className={td}>
+                    {c.company_name}
+                    {(c.company_contact_count ?? 0) > 1 && (
+                      <div className="text-xs text-slate-400">{c.company_contact_count} contacts at this company</div>
+                    )}
+                  </td>
                   <td className={`${td} text-slate-600`}>{location(c)}</td>
                   <td className={td}>
                     <ConfidencePill value={c.confidence} />

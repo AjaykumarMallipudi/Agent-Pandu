@@ -113,7 +113,7 @@ export function DiscoverPage() {
               <Field label="State">
                 <input className="input" value={c.state} onChange={(e) => set('state', e.target.value)} placeholder="e.g. Karnataka" />
               </Field>
-              <Field label={chosen === 'osm' ? 'City (required)' : 'City'}>
+              <Field label={chosen === 'osm' ? 'City (required)' : 'City'} hint={chosen === 'osm' ? 'Several cities: separate with commas (max 5), e.g. Hyderabad, Visakhapatnam' : undefined}>
                 <input className="input" required={chosen === 'osm'} value={c.city} onChange={(e) => set('city', e.target.value)} placeholder="e.g. Hyderabad" />
               </Field>
               <Field label="Industry">

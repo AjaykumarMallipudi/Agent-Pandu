@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { config } from '../../config.js';
+import { getDb } from '../../db/index.js';
 import { cacheGet, cacheKey, cacheSet } from '../../lib/apiCache.js';
+import { normalizeWebsite } from '../../lib/url.js';
 import { logger } from '../../logger.js';
 import {
   locationText,
@@ -267,18 +269,15 @@ export class OsmProvider implements DiscoveryProvider {
     };
   }
 
-  async geocode(c: DiscoveryCriteria): Promise<GeocodeResult> {
-    const params: Record<string, string | number> = { format: 'jsonv2', limit: 1, country: c.country, email: config().OSM_CONTACT_EMAIL };
-    if (c.city) params.city = c.city;
-    if (c.state) params.state = c.state;
-    const key = cacheKey('nominatim', JSON.stringify([params.city, params.state, params.country]));
-    const cached = cacheGet<GeocodeResult>(key);
-    if (cached) return cached;
-
+  /** One Nominatim request (rate-limited, cached). Returns null when nothing matches. */
+  private async nominatim(params: Record<string, string | number>): Promise<GeocodeResult | null> {
+    const key = cacheKey('nominatim', JSON.stringify(params));
+    const cached = cacheGet<GeocodeResult | null>(key);
+    if (cached !== undefined) return cached;
     const results = await nominatimSlot(async () => {
       try {
         const r = await axios.get<GeocodeResult[]>(`${config().OSM_NOMINATIM_URL.replace(/\/+$/, '')}/search`, {
-          params,
+          params: { ...params, format: 'jsonv2', limit: 1, email: config().OSM_CONTACT_EMAIL },
           headers: this.headers(),
           timeout: 15_000,
         });
@@ -287,43 +286,79 @@ export class OsmProvider implements DiscoveryProvider {
         throw this.httpError('Nominatim geocoding', e);
       }
     });
-    const first = results?.[0];
-    if (!first?.boundingbox) throw new ProviderError(`OpenStreetMap could not find the location "${locationText(c)}". Check the spelling of city/state/country.`);
-    cacheSet(key, first, GEOCODE_TTL_MS);
+    const first = results?.[0]?.boundingbox ? results[0] : null;
+    cacheSet(key, first, GEOCODE_TTL_MS); // negative results are cached too, so typos don't re-query
     return first;
   }
 
+  /**
+   * Finds one city. Tries, in order: the structured city/state/country query, a free-text query
+   * (handles alternative names such as "Vizag"), then the city without the state (in case the state is wrong).
+   */
+  async geocode(c: DiscoveryCriteria): Promise<GeocodeResult & { resolvedCity: string }> {
+    const city = cityAlias(c.city.trim());
+    const attempts: Record<string, string>[] = [
+      { country: c.country, ...(city ? { city } : {}), ...(c.state ? { state: c.state } : {}) },
+      { q: [city, c.state, c.country].filter(Boolean).join(', ') },
+    ];
+    if (c.state && city) attempts.push({ q: `${city}, ${c.country}` });
+    for (const params of attempts) {
+      const found = await this.nominatim(params);
+      if (found) return { ...found, resolvedCity: city };
+    }
+    throw new ProviderError(
+      `OpenStreetMap could not find the location "${[c.city, c.state, c.country].filter(Boolean).join(', ')}". Check the spelling (use the full city name, e.g. Visakhapatnam, Hyderabad).`,
+      404,
+    );
+  }
+
+  /** Runs a query on the primary Overpass server, then once on each fallback server if it is busy or times out. */
   async overpass(query: string): Promise<OsmElement[]> {
     const key = cacheKey('overpass', query);
     const cached = cacheGet<OsmElement[]>(key);
     if (cached) return cached;
-    const elements = await overpassSlot(async () => {
+    const servers = [config().OSM_OVERPASS_URL, ...config().OSM_OVERPASS_FALLBACK_URLS.split(',').map((u) => u.trim()).filter(Boolean)];
+    let lastError: ProviderError | null = null;
+    for (const [i, server] of servers.entries()) {
       try {
-        const r = await axios.post<{ elements?: OsmElement[]; remark?: string }>(config().OSM_OVERPASS_URL, new URLSearchParams({ data: query }).toString(), {
-          headers: { ...this.headers(), 'Content-Type': 'application/x-www-form-urlencoded' },
-          timeout: 120_000, // longer than the server-side [timeout:90] so Overpass can report its own timeout
-          maxContentLength: OVERPASS_MAX_BYTES,
+        const elements = await overpassSlot(async () => {
+          try {
+            const r = await axios.post<{ elements?: OsmElement[]; remark?: string }>(server, new URLSearchParams({ data: query }).toString(), {
+              headers: { ...this.headers(), 'Content-Type': 'application/x-www-form-urlencoded' },
+              timeout: 120_000, // longer than the server-side [timeout:90] so Overpass can report its own timeout
+              maxContentLength: OVERPASS_MAX_BYTES,
+            });
+            if (r.data.remark && /runtime error|timed out|out of memory/i.test(r.data.remark)) {
+              throw new ProviderError(`Overpass could not complete the query: ${r.data.remark.trim().replace(/\.+$/, '')}. Try a smaller area or try again later.`, 408);
+            }
+            return r.data.elements ?? [];
+          } catch (e) {
+            if (e instanceof ProviderError) throw e;
+            throw this.httpError('Overpass query', e);
+          }
         });
-        if (r.data.remark && /runtime error|timed out|out of memory/i.test(r.data.remark)) {
-          throw new ProviderError(`Overpass could not complete the query: ${r.data.remark.trim().replace(/\.+$/, '')}. Try a smaller area or try again later.`);
-        }
-        return r.data.elements ?? [];
+        cacheSet(key, elements, OVERPASS_TTL_MS);
+        return elements;
       } catch (e) {
-        if (e instanceof ProviderError) throw e;
-        throw this.httpError('Overpass query', e);
+        if (!(e instanceof ProviderError) || !isBusy(e)) throw e;
+        lastError = e;
+        if (i < servers.length - 1) logger.warn({ server, err: e.message }, 'Overpass server busy; trying the next public server once');
       }
-    });
-    cacheSet(key, elements, OVERPASS_TTL_MS);
-    return elements;
+    }
+    throw lastError ?? new ProviderError('Overpass query failed');
   }
 
   private httpError(what: string, e: unknown): ProviderError {
     if (axios.isAxiosError(e)) {
       // A slow body aborted by the timeout surfaces as ERR_BAD_RESPONSE "stream has been aborted".
-      if (e.code === 'ECONNABORTED' || e.code === 'ETIMEDOUT' || (e.code === 'ERR_BAD_RESPONSE' && /aborted/i.test(e.message))) return new ProviderError(`${what}: timed out. Try again later or narrow the area.`);
+      if (e.code === 'ECONNABORTED' || e.code === 'ETIMEDOUT' || (e.code === 'ERR_BAD_RESPONSE' && /aborted/i.test(e.message))) {
+        return new ProviderError(`${what}: timed out. Try again later or narrow the area.`, 408);
+      }
       const status = e.response?.status;
       if (status === 429) return new ProviderError(`${what}: rate limited by the public OpenStreetMap service (HTTP 429). Wait a few minutes and try again.`, 429);
-      if (status === 504 || status === 503) return new ProviderError(`${what}: the public service is busy (HTTP ${status}). Try again later.`, status);
+      if (status !== undefined && status >= 500 && status <= 504) {
+        return new ProviderError(`${what}: the public service is busy or having trouble (HTTP ${status}). Try again in a few minutes.`, status);
+      }
       if (status === 403) return new ProviderError(`${what}: request refused (HTTP 403). Check that OSM_CONTACT_EMAIL is set to a real address.`, 403);
       return new ProviderError(`${what} failed${status ? ` (HTTP ${status})` : ''}: ${e.message}`, status);
     }
@@ -332,9 +367,11 @@ export class OsmProvider implements DiscoveryProvider {
 
   /** Whole-country/state areas are far too large for the free public Overpass service (it times out). */
   validate(c: DiscoveryCriteria): string | null {
-    if (!c.city.trim()) {
-      return 'OpenStreetMap searches need a City. A whole country or state is too large for the free public Overpass service and times out. Enter a city (e.g. Hyderabad, Telangana) and run one search per city for wider coverage.';
+    const cities = splitCities(c.city);
+    if (cities.length === 0) {
+      return 'OpenStreetMap searches need a City. A whole country or state is too large for the free public Overpass service and times out. Enter a city (e.g. Hyderabad, Telangana); you can list several separated by commas.';
     }
+    if (cities.length > MAX_CITIES) return `Search at most ${MAX_CITIES} cities per run (you entered ${cities.length}).`;
     return null;
   }
 
@@ -342,51 +379,143 @@ export class OsmProvider implements DiscoveryProvider {
     if (!this.status().configured) throw new ProviderConfigError(this.status().message);
     const invalid = this.validate(c);
     if (invalid) throw new ProviderError(invalid);
-    const geo = await this.geocode(c);
-    if (shouldStop()) return;
-
-    const [south, north, west, east] = geo.boundingbox!.map(Number) as [number, number, number, number];
-    const areaId =
-      geo.osm_type === 'relation' && geo.osm_id ? 3_600_000_000 + geo.osm_id : geo.osm_type === 'way' && geo.osm_id ? 2_400_000_000 + geo.osm_id : null;
-    let elements = areaId ? await this.overpass(buildOverpassQuery({ areaId })) : [];
-    // Fall back to the bounding box when no boundary area is available for this place.
-    if (elements.length === 0) elements = await this.overpass(buildOverpassQuery({ bbox: [south, west, north, east] }));
-    if (shouldStop()) return;
 
     const cats = requestedCategories(c);
     const kws = extraKeywords(c);
     const candidates: { company: DiscoveredCompany; score: number }[] = [];
     const seen = new Set<string>();
-    for (const el of elements) {
-      const m = matchElement(el.tags ?? {}, cats, kws);
-      if (!m.matched) continue;
-      const company = elementToCompany(el, c, m);
-      if (!company || seen.has(company.providerRef)) continue;
-      seen.add(company.providerRef);
-      candidates.push({ company, score: m.score });
+    const perCity: string[] = [];
+    const failures: ProviderError[] = [];
+    let totalElements = 0;
+
+    for (const cityInput of splitCities(c.city)) {
+      if (shouldStop()) return;
+      const cc = { ...c, city: cityInput };
+      let elements: OsmElement[];
+      let geo: GeocodeResult & { resolvedCity: string };
+      try {
+        geo = await this.geocode(cc);
+        const [south, north, west, east] = geo.boundingbox!.map(Number) as [number, number, number, number];
+        const areaId =
+          geo.osm_type === 'relation' && geo.osm_id ? 3_600_000_000 + geo.osm_id : geo.osm_type === 'way' && geo.osm_id ? 2_400_000_000 + geo.osm_id : null;
+        elements = areaId ? await this.overpass(buildOverpassQuery({ areaId })) : [];
+        // Fall back to the bounding box when no boundary area is available for this place.
+        if (elements.length === 0) elements = await this.overpass(buildOverpassQuery({ bbox: [south, west, north, east] }));
+      } catch (e) {
+        if (!(e instanceof ProviderError)) throw e;
+        failures.push(e);
+        perCity.push(`${cityInput}: ${e.message}`);
+        continue;
+      }
+      totalElements += elements.length;
+      const resolved = { ...cc, city: geo.resolvedCity };
+      let matched = 0;
+      let websites = 0;
+      for (const el of elements) {
+        const m = matchElement(el.tags ?? {}, cats, kws);
+        if (!m.matched) continue;
+        const company = elementToCompany(el, resolved, m);
+        if (!company || seen.has(company.providerRef)) continue;
+        seen.add(company.providerRef);
+        candidates.push({ company, score: m.score });
+        matched++;
+        if (company.website) websites++;
+      }
+      perCity.push(`${geo.resolvedCity}: ${matched} of ${elements.length} matched, ${websites} with website`);
+      logger.info({ city: geo.resolvedCity, location: geo.display_name, elements: elements.length, matched, websites }, 'OSM discovery results');
     }
+
+    // Every city failed: surface the real error (busy server, unknown place…) as the run failure.
+    if (failures.length && failures.length === splitCities(c.city).length) {
+      throw failures.length === 1 ? failures[0]! : new ProviderError(perCity.join(' · '));
+    }
+
+    // Skip companies already saved by earlier runs, so each run brings the *next* best companies
+    // instead of the same top N again.
+    const fresh = candidates.filter((x) => !isKnownCompany(this.id, x.company.providerRef, x.company.website));
+    const alreadySaved = candidates.length - fresh.length;
     // Companies with a website first (they can be scanned for contacts), then strongest category evidence.
-    candidates.sort((a, b) => Number(Boolean(b.company.website)) - Number(Boolean(a.company.website)) || b.score - a.score);
-    const withWebsite = candidates.filter((x) => x.company.website).length;
-    logger.info({ location: geo.display_name, elements: elements.length, matched: candidates.length, withWebsite }, 'OSM discovery results');
+    fresh.sort((a, b) => Number(Boolean(b.company.website)) - Number(Boolean(a.company.website)) || b.score - a.score);
+    const batch = fresh.slice(0, c.maxCompanies);
+    const batchWebsites = batch.filter((x) => x.company.website).length;
+    const remaining = fresh.length - batch.length;
     const asked = [c.industry, c.keywords].filter(Boolean).join(', ') || 'any company';
     const place = locationText(c);
+    const detail = splitCities(c.city).length > 1 || failures.length ? ` [${perCity.join(' · ')}]` : '';
     if (candidates.length === 0) {
       report?.(
-        `OpenStreetMap has ${elements.length} business record(s) around ${place}, but none matched "${asked}". ` +
-          'OSM coverage of companies is limited in many cities — try leaving Industry empty, a larger nearby city, or the optional Google Places source.',
+        `OpenStreetMap has ${totalElements} business record(s) around ${place}, but none matched "${asked}". ` +
+          `OSM coverage of companies is limited in many cities — try leaving Industry empty, a larger nearby city, or the optional Google Places source.${detail}`,
+      );
+    } else if (fresh.length === 0) {
+      report?.(
+        `All ${candidates.length} matching companies around ${place} are already in your list — nothing new here. ` +
+          `Try another city, or a broader Industry (e.g. leave it empty).${detail}`,
       );
     } else {
-      const shown = Math.min(candidates.length, c.maxCompanies);
       report?.(
-        `OpenStreetMap: ${candidates.length} of ${elements.length} business records around ${place} matched "${asked}"` +
-          `${shown < candidates.length ? ` (using the top ${shown})` : ''}; ${withWebsite} have a website to scan for public contacts.` +
-          (withWebsite === 0 ? ' Companies without a website are saved but cannot be scanned.' : ''),
+        `OpenStreetMap: ${candidates.length} companies around ${place} match "${asked}"` +
+          `${alreadySaved ? `, ${alreadySaved} already in your list` : ''}. Adding ${batch.length} new (${batchWebsites} with a website to scan)` +
+          `${remaining ? `; run again to get the next ${Math.min(remaining, c.maxCompanies)} of ${remaining} remaining` : ''}.` +
+          (batchWebsites === 0 ? ' Companies without a website are saved but cannot be scanned.' : '') +
+          detail,
       );
     }
-    for (const { company } of candidates.slice(0, c.maxCompanies)) {
+    for (const { company } of batch) {
       if (shouldStop()) return;
       yield company;
     }
+  }
+}
+
+// ---------- City input helpers ----------
+
+const MAX_CITIES = 5;
+
+/** "Vizag, Hyderabad" → ["Vizag", "Hyderabad"]. */
+export function splitCities(input: string): string[] {
+  return [...new Set(input.split(/[,;/|]+/).map((s) => s.trim()).filter(Boolean))];
+}
+
+/** Common Indian city nicknames/old names → names OpenStreetMap knows. */
+const CITY_ALIASES: Record<string, string> = {
+  hyd: 'Hyderabad',
+  hyderabad: 'Hyderabad',
+  secunderabad: 'Secunderabad',
+  vizag: 'Visakhapatnam',
+  vishakhapatnam: 'Visakhapatnam',
+  vishakapatnam: 'Visakhapatnam',
+  vsp: 'Visakhapatnam',
+  bezawada: 'Vijayawada',
+  vja: 'Vijayawada',
+  blr: 'Bengaluru',
+  bangalore: 'Bengaluru',
+  bombay: 'Mumbai',
+  madras: 'Chennai',
+  calcutta: 'Kolkata',
+  gurgaon: 'Gurugram',
+  poona: 'Pune',
+  trivandrum: 'Thiruvananthapuram',
+  cochin: 'Kochi',
+  ncr: 'Delhi',
+};
+export function cityAlias(city: string): string {
+  return CITY_ALIASES[city.toLowerCase()] ?? city;
+}
+
+/** Server-side trouble on a public instance (overload, gateway errors, timeouts): worth one try on a backup server. */
+function isBusy(e: ProviderError): boolean {
+  return e.status === 408 || e.status === 429 || (e.status !== undefined && e.status >= 500 && e.status <= 504);
+}
+
+/** Already saved from an earlier run: same OSM record, or a company with the same website domain. */
+function isKnownCompany(provider: string, providerRef: string, website: string | null): boolean {
+  const db = getDb();
+  if (db.prepare('SELECT 1 FROM company_sources WHERE provider = ? AND provider_ref = ?').get(provider, providerRef)) return true;
+  if (!website) return false;
+  try {
+    return Boolean(db.prepare('SELECT 1 FROM companies WHERE domain = ?').get(normalizeWebsite(website).domain));
+  } catch {
+    return false;
   }
 }

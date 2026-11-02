@@ -184,4 +184,22 @@ export const migrations: string[] = [
     expires_at TEXT NOT NULL
   );
   `,
+  `
+  -- Addresses contacted on another machine (imported from the data snapshot). Never emailed again.
+  CREATE TABLE contacted_history (
+    email TEXT PRIMARY KEY,
+    company_domain TEXT,
+    contacted_at TEXT NOT NULL,
+    source TEXT NOT NULL
+  );
+  CREATE INDEX ix_contacted_history_domain ON contacted_history(company_domain);
+
+  -- Universities, research institutes and government sites are not employers to cold-email.
+  UPDATE companies SET discovery_status = 'invalid_website',
+    scan_error = 'University / government / research institution site — not a company'
+  WHERE domain LIKE '%.ac.in' OR domain LIKE '%.edu' OR domain LIKE '%.edu.in' OR domain LIKE '%.gov.in'
+     OR domain LIKE '%.nic.in' OR domain LIKE '%.gov' OR domain LIKE '%.ac.uk' OR domain LIKE '%.edu.au' OR domain LIKE '%.res.in';
+  UPDATE contacts SET status = 'invalid'
+  WHERE company_id IN (SELECT id FROM companies WHERE scan_error = 'University / government / research institution site — not a company');
+  `,
 ];

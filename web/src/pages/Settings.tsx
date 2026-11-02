@@ -18,6 +18,115 @@ interface EventRow {
   created_at: string;
 }
 
+function ApplyingCard({ settings, onSaved }: { settings: SettingsView; onSaved: (v: SettingsView) => void }) {
+  const rt = settings.runtime;
+  const [resumeUrl, setResumeUrl] = useState(rt.resumeUrl);
+  const save = useMutation({
+    mutationFn: (patch: Partial<RuntimeSettings>) => api<SettingsView>('/settings', { method: 'PUT', body: patch }),
+    onSuccess: onSaved,
+  });
+  return (
+    <Card title="Applying">
+      <div className="space-y-5">
+        <form
+          className="space-y-2"
+          onSubmit={(e) => {
+            e.preventDefault();
+            save.mutate({ resumeUrl: resumeUrl.trim() });
+          }}
+        >
+          <Field
+            label="Resume link (Google Drive)"
+            hint={
+              <>
+                Used by the blue “View My Resume” button. In Google Drive: right-click your resume → Share → General access: <strong>Anyone with the link</strong> → Copy link.
+              </>
+            }
+          >
+            <input className="input" type="url" placeholder="https://drive.google.com/file/d/…/view?usp=sharing" value={resumeUrl} onChange={(e) => setResumeUrl(e.target.value)} />
+          </Field>
+          <div className="flex items-center gap-2">
+            <Button type="submit" variant="primary" disabled={save.isPending || resumeUrl.trim() === rt.resumeUrl}>
+              Save link
+            </Button>
+            {rt.resumeUrl && (
+              <a href={rt.resumeUrl} target="_blank" rel="noreferrer noopener" className="text-sm text-blue-600 hover:underline">
+                Test link
+              </a>
+            )}
+          </div>
+        </form>
+        <div className="flex items-start justify-between gap-4 border-t border-slate-100 pt-4">
+          <div>
+            <div className="font-medium">One contact per company</div>
+            <p className="text-sm text-slate-500">
+              Email only the best person at each company (HR first), and never a second person at a company you already wrote to.
+            </p>
+          </div>
+          <Button variant={rt.onePerCompany ? 'primary' : 'secondary'} disabled={save.isPending} onClick={() => save.mutate({ onePerCompany: !rt.onePerCompany })}>
+            {rt.onePerCompany ? 'On' : 'Off'}
+          </Button>
+        </div>
+        <ErrorText error={save.error} />
+      </div>
+    </Card>
+  );
+}
+
+function DataFilesCard() {
+  const qc = useQueryClient();
+  const st = useQuery({
+    queryKey: ['snapshot'],
+    queryFn: () => api<{ dir: string; exists: boolean; savedAt: string | null; meta: { counts: Record<string, number> } | null }>('/data/snapshot'),
+  });
+  const [msg, setMsg] = useState('');
+  const exp = useMutation({
+    mutationFn: () => api<Record<string, number>>('/data/export', { method: 'POST' }),
+    onSuccess: (r) => {
+      setMsg(`Saved ${r.companies} companies and ${r.contacts} contacts.`);
+      void qc.invalidateQueries({ queryKey: ['snapshot'] });
+    },
+  });
+  const imp = useMutation({
+    mutationFn: () => api<{ added: Record<string, number> }>('/data/import', { method: 'POST' }),
+    onSuccess: (r) => {
+      setMsg(`Loaded: ${r.added.companies} new companies, ${r.added.contacts} new contacts, ${r.added.contacted} already-contacted addresses.`);
+      void qc.invalidateQueries();
+    },
+  });
+  const counts = st.data?.meta?.counts;
+  return (
+    <Card title="Data files (for GitHub)">
+      <div className="space-y-3 text-sm">
+        <p className="text-slate-600">
+          Companies, contacts, opt-outs, the list of people already emailed, and your templates are saved as JSON in <code>data/snapshot/</code> automatically after
+          every discovery run, campaign and change. Commit that folder; on another computer a fresh clone loads it on first start.
+        </p>
+        {st.data?.exists && counts ? (
+          <p>
+            Last saved {fmtDate(st.data.savedAt)}: {counts.companies} companies, {counts.contacts} contacts, {counts.contacted} contacted, {counts.suppressions} opt-outs.
+          </p>
+        ) : (
+          <p className="text-slate-500">No data files yet.</p>
+        )}
+        <Alert tone="warn">
+          These files contain people’s names and email addresses. Keep the GitHub repository <strong>private</strong>.
+        </Alert>
+        <div className="flex flex-wrap gap-2">
+          <Button variant="primary" onClick={() => exp.mutate()} disabled={exp.isPending}>
+            Save data files now
+          </Button>
+          <Button onClick={() => imp.mutate()} disabled={imp.isPending || !st.data?.exists}>
+            Load from data files
+          </Button>
+        </div>
+        {msg && <Alert tone="success">{msg}</Alert>}
+        <ErrorText error={exp.error ?? imp.error} />
+      </div>
+    </Card>
+  );
+}
+
 function Row({ k, v }: { k: string; v: React.ReactNode }) {
   return (
     <div className="flex justify-between gap-4 py-1.5 text-sm">
@@ -148,6 +257,9 @@ export function SettingsPage() {
             </div>
           </form>
         </Card>
+
+        <ApplyingCard settings={d} onSaved={onSaved} />
+        <DataFilesCard />
 
         <Card title="SMTP (Nodemailer)" actions={<Button onClick={() => verify.mutate()} disabled={verify.isPending}>{verify.isPending ? 'Checking…' : 'Run diagnostics'}</Button>}>
           {!d.smtp.configured && <Alert tone="warn" title="Not configured">Missing in .env: {d.smtp.missing.join(', ')}</Alert>}

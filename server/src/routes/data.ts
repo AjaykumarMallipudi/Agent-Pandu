@@ -1,11 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import { Router } from 'express';
 import { z } from 'zod';
 import { HttpError } from '../campaigns/service.js';
 import { CONTACT_TYPES } from '../crawler/classify.js';
-import { contactStatusSql } from '../contacts/repo.js';
+import { bestPerCompanySql, contactStatusSql, typeRankSql } from '../contacts/repo.js';
 import { normalizeEmail, isValidEmailSyntax } from '../crawler/extract.js';
 import { getDb, logEvent } from '../db/index.js';
 import { exportCampaignHistory, exportCompanies, exportContacts } from '../export/excel.js';
+import { exportSnapshot, importSnapshot, snapshotDir, snapshotExists } from '../export/snapshot.js';
+import { scheduleSnapshot } from '../export/snapshot.js';
 import { idParam, parse } from '../http/middleware.js';
 import { getSettings } from '../settings.js';
 
@@ -48,6 +52,7 @@ const companyQuery = z.object({
   status: z.string().optional(),
   location: z.string().optional(),
   industry: z.string().optional(),
+  contacts: z.enum(['with', 'without']).optional(),
   page: z.coerce.number().int().min(1).default(1),
   pageSize: z.coerce.number().int().min(1).max(200).default(25),
 });
@@ -72,6 +77,7 @@ dataRouter.get('/companies', (req, res) => {
     where.push('co.industry LIKE ?');
     params.push(`%${q.industry}%`);
   }
+  if (q.contacts) where.push(`${q.contacts === 'with' ? '' : 'NOT '}EXISTS (SELECT 1 FROM contacts c WHERE c.company_id = co.id)`);
   const w = where.length ? `WHERE ${where.join(' AND ')}` : '';
   const total = count(`SELECT COUNT(*) n FROM companies co ${w}`, ...params);
   const items = getDb()
@@ -108,8 +114,12 @@ const contactQuery = z.object({
   type: z.enum(CONTACT_TYPES).optional(),
   location: z.string().optional(),
   minConfidence: z.coerce.number().int().min(0).max(100).optional(),
-  status: z.enum(['eligible', 'suppressed', 'contacted', 'invalid', 'low_confidence']).optional(),
+  status: z.enum(['eligible', 'suppressed', 'contacted', 'company_contacted', 'invalid', 'low_confidence']).optional(),
   companyId: z.coerce.number().int().optional(),
+  /** Only the single best eligible contact at each company. */
+  bestPerCompany: z.enum(['0', '1', 'true', 'false']).optional().transform((v) => v === '1' || v === 'true'),
+  /** 'priority' = HR first, then talent/recruiting, careers, founder, general; then confidence. */
+  sort: z.enum(['confidence', 'priority']).default('confidence'),
   page: z.coerce.number().int().min(1).default(1),
   pageSize: z.coerce.number().int().min(1).max(200).default(25),
 });
@@ -142,8 +152,16 @@ function contactFilter(q: z.infer<typeof contactQuery>) {
     where.push(`(${st.sql}) = ?`);
     params.push(...st.params, q.status);
   }
+  if (q.bestPerCompany) {
+    const best = bestPerCompanySql();
+    where.push(`c.id IN (${best.sql})`);
+    params.push(...best.params);
+  }
   return { st, w: where.length ? `WHERE ${where.join(' AND ')}` : '', params };
 }
+
+const orderBy = (sort: 'confidence' | 'priority') =>
+  sort === 'priority' ? `${typeRankSql('c')}, c.confidence DESC, c.id` : 'c.confidence DESC, c.id DESC';
 
 const CONTACT_FROM = 'FROM contacts c JOIN companies co ON co.id = c.company_id LEFT JOIN suppressions s ON s.email = c.email';
 
@@ -154,8 +172,9 @@ dataRouter.get('/contacts', (req, res) => {
   const items = getDb()
     .prepare(
       `SELECT c.id, c.email, c.name, c.role_title, c.contact_type, c.confidence, c.domain_matches_company, c.mx_checked, c.mx_valid,
-              c.last_seen_at, co.id AS company_id, co.name AS company_name, co.city, co.state, co.country, ${st.sql} AS eligibility
-       ${CONTACT_FROM} ${w} ORDER BY c.confidence DESC, c.id DESC LIMIT ? OFFSET ?`,
+              c.last_seen_at, co.id AS company_id, co.name AS company_name, co.city, co.state, co.country, ${st.sql} AS eligibility,
+              (SELECT COUNT(*) FROM contacts cc WHERE cc.company_id = c.company_id) AS company_contact_count
+       ${CONTACT_FROM} ${w} ORDER BY ${orderBy(q.sort)} LIMIT ? OFFSET ?`,
     )
     .all(...st.params, ...params, q.pageSize, (q.page - 1) * q.pageSize);
   res.json({ items, total, page: q.page, pageSize: q.pageSize });
@@ -164,11 +183,14 @@ dataRouter.get('/contacts', (req, res) => {
 /** IDs of eligible contacts matching the filter, capped at the campaign recipient limit ("select all eligible"). */
 dataRouter.get('/contacts/eligible-ids', (req, res) => {
   const q = parse(contactQuery, req.query);
-  const { st, w, params } = contactFilter({ ...q, status: undefined });
-  const limit = getSettings().maxRecipientsPerCampaign;
+  const settings = getSettings();
+  // One contact per company by default when that setting is on.
+  const bestPerCompany = req.query.bestPerCompany === undefined ? settings.onePerCompany : q.bestPerCompany;
+  const { st, w, params } = contactFilter({ ...q, status: undefined, bestPerCompany });
+  const limit = settings.maxRecipientsPerCampaign;
   const ids = (
     getDb()
-      .prepare(`SELECT c.id ${CONTACT_FROM} ${w ? `${w} AND` : 'WHERE'} (${st.sql}) = 'eligible' ORDER BY c.confidence DESC, c.id LIMIT ?`)
+      .prepare(`SELECT c.id ${CONTACT_FROM} ${w ? `${w} AND` : 'WHERE'} (${st.sql}) = 'eligible' ORDER BY ${orderBy('priority')} LIMIT ?`)
       .all(...params, ...st.params, limit) as { id: number }[]
   ).map((r) => r.id);
   res.json({ ids, limit });
@@ -200,12 +222,14 @@ dataRouter.post('/suppressions', (req, res) => {
   if (!isValidEmailSyntax(email)) throw new HttpError(400, 'Invalid email address');
   getDb().prepare(`INSERT OR IGNORE INTO suppressions (email, reason, source) VALUES (?, ?, 'manual')`).run(email, body.reason);
   logEvent('suppression.added', `${email} suppressed`, undefined, { reason: body.reason });
+  scheduleSnapshot();
   res.status(201).json({ ok: true });
 });
 
 dataRouter.delete('/suppressions/:id', (req, res) => {
   const id = parse(idParam, req.params.id);
   getDb().prepare('DELETE FROM suppressions WHERE id = ?').run(id);
+  scheduleSnapshot();
   res.json({ ok: true });
 });
 
@@ -266,4 +290,23 @@ dataRouter.get('/export/contacts.xlsx', async (req, res) => {
 });
 dataRouter.get('/export/campaign-history.xlsx', async (_req, res) => {
   res.download(await exportCampaignHistory(), 'campaign-history.xlsx');
+});
+
+// ---------- Data snapshot (git-friendly JSON in data/snapshot) ----------
+dataRouter.get('/data/snapshot', (_req, res) => {
+  const dir = snapshotDir();
+  const metaFile = path.join(dir, 'meta.json');
+  res.json({
+    dir,
+    exists: snapshotExists(),
+    meta: fs.existsSync(metaFile) ? JSON.parse(fs.readFileSync(metaFile, 'utf8')) : null,
+    savedAt: fs.existsSync(metaFile) ? fs.statSync(metaFile).mtime.toISOString() : null,
+  });
+});
+dataRouter.post('/data/export', (_req, res) => {
+  res.json(exportSnapshot());
+});
+dataRouter.post('/data/import', (_req, res) => {
+  if (!snapshotExists()) throw new HttpError(404, `No snapshot found in ${snapshotDir()}`);
+  res.json(importSnapshot());
 });

@@ -5,6 +5,7 @@ import { config } from '../config.js';
 import { getDb, logEvent, nowIso } from '../db/index.js';
 import { buildContext, PLACEHOLDERS, renderTemplate, SAMPLE_CONTEXT_INPUT, validateTemplateSource } from '../email/templates.js';
 import { fromHeader, realTransport, smtpStatus } from '../email/transport.js';
+import { scheduleSnapshot } from '../export/snapshot.js';
 import { idParam, parse } from '../http/middleware.js';
 import { getSettings } from '../settings.js';
 
@@ -47,6 +48,7 @@ templatesRouter.post('/templates', (req, res) => {
     const r = getDb()
       .prepare('INSERT INTO email_templates (name, subject, html, text, attach_resume) VALUES (?, ?, ?, ?, ?)')
       .run(b.name, b.subject, b.html, b.text, b.attachResume ? 1 : 0);
+    scheduleSnapshot();
     res.status(201).json(getTemplate(Number(r.lastInsertRowid)));
   } catch (e) {
     if (String(e).includes('UNIQUE')) throw new HttpError(409, 'A template with this name already exists');
@@ -67,6 +69,7 @@ templatesRouter.put('/templates/:id', (req, res) => {
     if (String(e).includes('UNIQUE')) throw new HttpError(409, 'A template with this name already exists');
     throw e;
   }
+  scheduleSnapshot();
   res.json(getTemplate(id));
 });
 
@@ -84,6 +87,7 @@ templatesRouter.delete('/templates/:id', (req, res) => {
   const id = parse(idParam, req.params.id);
   getTemplate(id);
   getDb().prepare('DELETE FROM email_templates WHERE id = ?').run(id);
+  scheduleSnapshot();
   res.json({ ok: true });
 });
 

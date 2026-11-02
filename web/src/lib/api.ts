@@ -101,7 +101,7 @@ export interface Company {
   contact_count?: number;
 }
 
-export type Eligibility = 'eligible' | 'suppressed' | 'contacted' | 'invalid' | 'low_confidence';
+export type Eligibility = 'eligible' | 'suppressed' | 'contacted' | 'company_contacted' | 'invalid' | 'low_confidence';
 
 export interface Contact {
   id: number;
@@ -120,6 +120,7 @@ export interface Contact {
   state: string | null;
   country: string | null;
   eligibility: Eligibility;
+  company_contact_count?: number;
 }
 
 export interface Evidence {
@@ -237,6 +238,8 @@ export interface RuntimeSettings {
   killSwitch: boolean;
   testModeLockedByEnv: boolean;
   killSwitchLockedByEnv: boolean;
+  onePerCompany: boolean;
+  resumeUrl: string;
 }
 
 export interface SettingsView {

@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { publishCampaign } from '../campaigns/service.js';
 import { config } from '../config.js';
 import { getDb, logEvent, nowIso } from '../db/index.js';
+import { scheduleSnapshot } from '../export/snapshot.js';
 import { parse } from '../http/middleware.js';
 
 /** Unauthenticated endpoints: recipient opt-out and provider delivery webhooks. */
@@ -40,6 +41,7 @@ publicRouter.post('/unsubscribe/:token', express.urlencoded({ extended: false })
   if (m) {
     getDb().prepare(`INSERT OR IGNORE INTO suppressions (email, reason, source) VALUES (?, 'Recipient opted out via link', 'unsubscribe_link')`).run(m.email);
     logEvent('suppression.unsubscribe', 'Recipient opted out via unsubscribe link', { type: 'campaign_message', id: m.id });
+    scheduleSnapshot();
     publishCampaign(m.campaign_id);
   }
   res.send(page('Unsubscribed', '<h1 style="font-size:20px;margin-top:0">You have been unsubscribed</h1><p>You will not receive further messages.</p>'));

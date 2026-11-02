@@ -2,6 +2,7 @@ import Handlebars from 'handlebars';
 import sanitizeHtml from 'sanitize-html';
 import { config } from '../config.js';
 import { getDb } from '../db/index.js';
+import { getSettings } from '../settings.js';
 
 export const PLACEHOLDERS = [
   'name',
@@ -14,6 +15,7 @@ export const PLACEHOLDERS = [
   'linkedin',
   'github',
   'portfolio',
+  'resume_url',
   'unsubscribe_url',
 ] as const;
 export type Placeholder = (typeof PLACEHOLDERS)[number];
@@ -115,7 +117,7 @@ function httpUrl(v: string): string {
 
 const oneLine = (s: string) => s.replace(/[\r\n]+/g, ' ').trim();
 
-export function senderContext(): Pick<TemplateContext, 'sender_name' | 'sender_email' | 'phone' | 'linkedin' | 'github' | 'portfolio'> {
+export function senderContext(): Pick<TemplateContext, 'sender_name' | 'sender_email' | 'phone' | 'linkedin' | 'github' | 'portfolio' | 'resume_url'> {
   const c = config();
   return {
     sender_name: c.SENDER_NAME,
@@ -124,6 +126,7 @@ export function senderContext(): Pick<TemplateContext, 'sender_name' | 'sender_e
     linkedin: httpUrl(c.SENDER_LINKEDIN),
     github: httpUrl(c.SENDER_GITHUB),
     portfolio: httpUrl(c.SENDER_PORTFOLIO),
+    resume_url: httpUrl(getSettings().resumeUrl),
   };
 }
 
@@ -161,7 +164,7 @@ const OPT_OUT_TEXT = `\n\n--\nYou are receiving this one-time message because yo
 /** Wraps sanitized body HTML in a responsive email document shell. */
 function shell(body: string, subject: string): string {
   const title = Handlebars.escapeExpression(subject);
-  return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="x-apple-disable-message-reformatting"><title>${title}</title></head><body style="margin:0;padding:0;background:#f3f4f6;">${body}</body></html>`;
+  return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="x-apple-disable-message-reformatting"><title>${title}</title></head><body style="margin:0;padding:0;background:#ffffff;">${body}</body></html>`;
 }
 
 /** Validates, sanitizes and renders a template. All interpolated values are HTML-escaped in the HTML part. */
@@ -231,17 +234,61 @@ Email: {{sender_email}}
 You are receiving this one-time message because your address is listed publicly on {{company}}'s website. If you would prefer not to hear from me, reply "unsubscribe"{{#if unsubscribe_url}} or visit {{unsubscribe_url}}{{/if}} and I will not contact you again.`,
 };
 
+/** Plain, header-less message with a centred blue "View My Resume" button linking to {{resume_url}}. */
+export const RESUME_BUTTON_TEMPLATE: TemplateSource & { name: string } = {
+  name: 'Simple — resume button',
+  subject: 'Application for {{#if position}}{{position}}{{else}}opportunities{{/if}} at {{company}} — {{sender_name}}',
+  html: `<div style="max-width:600px;margin:0 auto;padding:28px 20px;font-family:Segoe UI,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:#1f2937;">
+<p style="margin:0 0 16px;">Dear {{name}},</p>
+<p style="margin:0 0 16px;">I hope you are doing well. My name is {{sender_name}}, and I am writing to express my interest in {{#if position}}the <strong>{{position}}</strong> role{{else}}suitable opportunities{{/if}} at <strong>{{company}}</strong>.</p>
+<p style="margin:0 0 16px;">I would be grateful if you could consider my profile for any current or upcoming openings, or share it with the relevant hiring team. My resume is available through the button below.</p>
+<p style="margin:0 0 16px;">Thank you for your time and consideration. I look forward to hearing from you.</p>
+<p style="margin:24px 0 0;">Best regards,<br><strong>{{sender_name}}</strong>{{#if phone}}<br>{{phone}}{{/if}}<br><a href="mailto:{{sender_email}}" style="color:#2563eb;text-decoration:none;">{{sender_email}}</a>{{#if linkedin}}<br><a href="{{linkedin}}" style="color:#2563eb;text-decoration:none;">LinkedIn</a>{{/if}}{{#if github}} · <a href="{{github}}" style="color:#2563eb;text-decoration:none;">GitHub</a>{{/if}}</p>
+{{#if resume_url}}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:32px 0 8px;"><tr><td align="center">
+<a href="{{resume_url}}" style="display:inline-block;background:#2563eb;color:#ffffff;text-decoration:none;font-weight:600;font-size:16px;line-height:20px;padding:14px 36px;border-radius:8px;">View My Resume</a>
+</td></tr></table>{{/if}}
+<p style="margin:32px 0 0;font-size:12px;line-height:18px;color:#9ca3af;text-align:center;">I found your address on {{company}}'s public website. If you would prefer not to hear from me, just reply "unsubscribe"{{#if unsubscribe_url}} or <a href="{{unsubscribe_url}}" style="color:#9ca3af;">opt out here</a>{{/if}}.</p>
+</div>`,
+  text: `Dear {{name}},
+
+I hope you are doing well. My name is {{sender_name}}, and I am writing to express my interest in {{#if position}}the {{position}} role{{else}}suitable opportunities{{/if}} at {{company}}.
+
+I would be grateful if you could consider my profile for any current or upcoming openings, or share it with the relevant hiring team.
+{{#if resume_url}}
+My resume: {{resume_url}}
+{{/if}}
+Thank you for your time and consideration. I look forward to hearing from you.
+
+Best regards,
+{{sender_name}}
+{{#if phone}}{{phone}}
+{{/if}}{{sender_email}}
+{{#if linkedin}}LinkedIn: {{linkedin}}
+{{/if}}
+--
+I found your address on {{company}}'s public website. If you would prefer not to hear from me, just reply "unsubscribe"{{#if unsubscribe_url}} or visit {{unsubscribe_url}}{{/if}}.`,
+};
+
+const BUILTIN_TEMPLATES = [RESUME_BUTTON_TEMPLATE, DEFAULT_TEMPLATE];
+
+/**
+ * Adds built-in templates once. A built-in the user later deletes is not re-added
+ * (tracked in settings.seeded_templates).
+ */
 export function ensureDefaultTemplate(): void {
   const db = getDb();
-  const count = (db.prepare('SELECT COUNT(*) n FROM email_templates').get() as { n: number }).n;
-  if (count === 0) {
-    db.prepare('INSERT INTO email_templates (name, subject, html, text, attach_resume) VALUES (?, ?, ?, ?, 0)').run(
-      DEFAULT_TEMPLATE.name,
-      DEFAULT_TEMPLATE.subject,
-      DEFAULT_TEMPLATE.html,
-      DEFAULT_TEMPLATE.text,
-    );
+  const row = db.prepare(`SELECT value FROM settings WHERE key = 'seeded_templates'`).get() as { value: string } | undefined;
+  const empty = (db.prepare('SELECT COUNT(*) n FROM email_templates').get() as { n: number }).n === 0;
+  // Installs from before this tracking existed already had the original default; don't resurrect it if deleted.
+  const seeded = new Set<string>(row ? (JSON.parse(row.value) as string[]) : empty ? [] : [DEFAULT_TEMPLATE.name]);
+  for (const t of BUILTIN_TEMPLATES) {
+    if (seeded.has(t.name)) continue;
+    db.prepare('INSERT OR IGNORE INTO email_templates (name, subject, html, text, attach_resume) VALUES (?, ?, ?, ?, 0)').run(t.name, t.subject, t.html, t.text);
+    seeded.add(t.name);
   }
+  db.prepare(
+    `INSERT INTO settings (key, value) VALUES ('seeded_templates', ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
+  ).run(JSON.stringify([...seeded]));
 }
 
 export const SAMPLE_CONTEXT_INPUT = { name: 'Priya Sharma', company: 'Example Technologies', role: 'Talent Acquisition', position: '' };

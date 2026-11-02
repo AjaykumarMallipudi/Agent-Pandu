@@ -16,6 +16,10 @@ export const settingsSchema = z.object({
   minConfidence: z.number().int().min(0).max(100),
   testMode: z.boolean(),
   killSwitch: z.boolean(),
+  /** Send to at most one contact per company, and never to a company already contacted. */
+  onePerCompany: z.boolean(),
+  /** Public link to the resume (e.g. Google Drive "Anyone with the link"), used by {{resume_url}}. */
+  resumeUrl: z.union([z.literal(''), z.string().trim().url().max(500).refine((u) => /^https:\/\//i.test(u), 'Resume link must start with https://')]),
 });
 export type RuntimeSettings = z.infer<typeof settingsSchema>;
 
@@ -29,6 +33,8 @@ function defaults(): RuntimeSettings {
     minConfidence: c.MIN_CONFIDENCE,
     testMode: c.EMAIL_TEST_MODE,
     killSwitch: c.SENDING_KILL_SWITCH,
+    onePerCompany: true,
+    resumeUrl: /^https:\/\//i.test(c.SENDER_RESUME_URL) ? c.SENDER_RESUME_URL : '',
   };
 }
 

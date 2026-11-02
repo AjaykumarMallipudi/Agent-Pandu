@@ -4,6 +4,8 @@ import { config, isLoopbackHost } from './config.js';
 import { closeDb, initDb } from './db/index.js';
 import { recoverInterruptedRuns } from './discovery/runner.js';
 import { ensureDefaultTemplate } from './email/templates.js';
+import { importSnapshotIfEmpty } from './export/snapshot.js';
+import { reclassifyIfOutdated } from './contacts/repo.js';
 import { logger } from './logger.js';
 import { getSettings } from './settings.js';
 
@@ -15,6 +17,9 @@ if (!isLoopbackHost(cfg.HOST) && !cfg.ADMIN_TOKEN) {
 }
 
 initDb(cfg.databasePath);
+importSnapshotIfEmpty();
+const reclassified = reclassifyIfOutdated();
+if (reclassified) logger.info(`Re-classified ${reclassified} contacts with updated rules`);
 ensureDefaultTemplate();
 recoverInterruptedRuns();
 const worker = startWorker();

@@ -53,6 +53,9 @@ const LOCAL_RULES: [RegExp, ContactType][] = [
   [/^(info|contact|contactus|hello|hi|enquiry|enquiries|inquiry|inquiries|office|mail|team|business|connect|reachus|general)$/, 'General Contact'],
 ];
 
+const NON_HIRING_LOCAL =
+  /^(privacy|legal|gdpr|dpo|data[._-]?protection|dataprivacy|compliance|security|abuse|billing|accounts?|accounting|finance|invoices?|payments?|press|media|pr|webmaster|noc|it[._-]?support|support|helpdesk|customer[._-]?(care|support|service)|sales|marketing|newsletter|orders?|returns|feedback|grievance|investors?|ir)$/;
+
 const CONTEXT_RULES: [RegExp, ContactType][] = [
   [/talent acquisition/i, 'Talent Acquisition'],
   [/\brecruiter\b/i, 'Recruiter'],
@@ -138,7 +141,13 @@ export function classifyContact(facts: ContactFacts): Classification {
   // Type: local-part evidence first, then explicit role/name evidence, then nearby text.
   let contactType: ContactType = 'Other';
   let typeEvidence: string | null = null;
-  for (const [re, t] of LOCAL_RULES) {
+  // Functional inboxes (privacy, legal, support, sales…) are never hiring contacts, whatever the page says.
+  const functional = NON_HIRING_LOCAL.test(local);
+  if (functional) {
+    score -= 20;
+    typeEvidence = `address name "${local}" is a privacy/legal/support/sales inbox, not a hiring contact (-20)`;
+  }
+  for (const [re, t] of functional ? [] : LOCAL_RULES) {
     if (re.test(local)) {
       contactType = t;
       typeEvidence = `address name "${local}" indicates ${t}`;
@@ -167,7 +176,7 @@ export function classifyContact(facts: ContactFacts): Classification {
     }
   }
 
-  if (contactType === 'Other') {
+  if (contactType === 'Other' && !functional) {
     const roleType = roleTitle && name ? roleToType(roleTitle) : null;
     if (roleType) {
       contactType = roleType;

@@ -3,6 +3,9 @@ dist/
 .env
 data/*
 !data/.gitkeep
+# Committed data snapshot (companies, contacts, opt-outs, contacted list, templates). Keep the repo PRIVATE.
+!data/snapshot/
+data/snapshot/*.tmp
 *.log
 .DS_Store
 coverage/

@@ -78,10 +78,11 @@ const STATUS_COLOR: Record<string, keyof typeof BADGE> = {
   running: 'blue', interrupted: 'amber', scanned: 'green', scanning: 'blue', discovered: 'slate', no_website: 'slate',
   invalid_website: 'amber', blocked_robots: 'amber', scan_failed: 'red',
   // contacts
-  eligible: 'green', suppressed: 'red', contacted: 'violet', invalid: 'red', low_confidence: 'amber',
+  eligible: 'green', suppressed: 'red', contacted: 'violet', company_contacted: 'violet', invalid: 'red', low_confidence: 'amber',
 };
 const STATUS_LABEL: Record<string, string> = {
   accepted: 'Accepted by SMTP', simulated: 'Simulated (test)', unknown: 'Outcome unknown', low_confidence: 'Low confidence',
+  company_contacted: 'Company already contacted',
   no_website: 'No website', invalid_website: 'Invalid website', blocked_robots: 'Blocked by robots.txt', scan_failed: 'Scan failed',
 };
 export function StatusBadge({ status }: { status: string }) {

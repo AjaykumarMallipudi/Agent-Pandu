@@ -37,6 +37,8 @@ const schema = z.object({
   OSM_CONTACT_EMAIL: str(),
   OSM_NOMINATIM_URL: str('https://nominatim.openstreetmap.org'),
   OSM_OVERPASS_URL: str('https://overpass-api.de/api/interpreter'),
+  /** Tried once each, in order, only when the main server is busy (429/503/504) or times out. Empty = no fallback. */
+  OSM_OVERPASS_FALLBACK_URLS: str('https://overpass.kumi.systems/api/interpreter'),
 
   CRAWL_USER_AGENT: str('SmartApplytickBot/1.0 (+public contact discovery; respects robots.txt)'),
   CRAWL_TIMEOUT_MS: int(10000, 1000, 60000),
@@ -57,6 +59,7 @@ const schema = z.object({
   SENDER_LINKEDIN: str(),
   SENDER_GITHUB: str(),
   SENDER_PORTFOLIO: str(),
+  SENDER_RESUME_URL: str(),
   TEST_EMAIL_ADDRESS: str(),
 
   EMAIL_TEST_MODE: bool(true),
@@ -69,6 +72,7 @@ const schema = z.object({
   MIN_CONFIDENCE: int(40, 0, 100),
   WORKER_POLL_MS: int(1000, 50, 60000),
 
+  SNAPSHOT_AUTO: bool(true),
   PUBLIC_BASE_URL: str(),
   WEBHOOK_SECRET: str(),
 });

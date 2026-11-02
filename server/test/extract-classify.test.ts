@@ -83,6 +83,17 @@ describe('contact classification', () => {
     for (const [email, type] of cases) expect(classifyContact(facts(email, [ev('Contact us')])).contactType, email).toBe(type);
   });
 
+  it('never treats privacy/legal/support/sales inboxes as hiring contacts (real case: privacy@ on a recruitment privacy page)', () => {
+    const c = classifyContact(facts('privacy@acme.com', [ev('Recruitment privacy notice: how we use candidate data. Contact privacy@acme.com', { pageType: 'careers' })]));
+    expect(c.contactType).toBe('Other');
+    expect(c.explanation.join(' ')).toMatch(/not a hiring contact/);
+    const hr = classifyContact(facts('hr@acme.com', [ev('HR team', { pageType: 'careers' })]));
+    expect(c.confidence).toBeLessThan(hr.confidence - 20);
+    for (const local of ['legal', 'support', 'sales', 'billing', 'dpo']) {
+      expect(classifyContact(facts(`${local}@acme.com`, [ev('Talent acquisition team')])).contactType, local).toBe('Other');
+    }
+  });
+
   it('uses nearby text when the address itself is not descriptive', () => {
     const c = classifyContact(facts('priya@acme.com', [ev('For talent acquisition queries write to priya@acme.com')]));
     expect(c.contactType).toBe('Talent Acquisition');

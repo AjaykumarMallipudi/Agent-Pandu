@@ -1,0 +1,2877 @@
+[
+  {
+    "key": "ams.com",
+    "name": "ams Semiconductors India Pvt. Ltd.",
+    "domain": "ams.com",
+    "website_url": "https://ams.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Hitec City, Cyber Pearl, Hyderabad, 500081",
+    "industry": "IT, software, technology",
+    "discovery_status": "invalid_website",
+    "scan_error": "Redirected off-site to https://ams-osram.com/",
+    "pages_scanned": 1,
+    "last_scanned_at": "2026-10-12T06:49:10.610Z",
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/3148718104",
+        "source_url": "https://www.openstreetmap.org/node/3148718104"
+      }
+    ]
+  },
+  {
+    "key": "aoplweb.com",
+    "name": "Absolute Online Web | Website Designers in Hyderabad | Digital Marketing in Hyderabad | SEO Services in Hyderabad",
+    "domain": "aoplweb.com",
+    "website_url": "https://www.aoplweb.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "16-2-45/B Sayeedabad Road Jeevan Yaar Jung Colony, Akbarbagh, New Malakpet, Hyderabad, 500059",
+    "industry": "office=it",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:35:45.543Z",
+    "created_at": "2026-10-09T06:35:26.469Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/9770198992",
+        "source_url": "https://www.openstreetmap.org/node/9770198992"
+      }
+    ]
+  },
+  {
+    "key": "aoplweb.in",
+    "name": "Internet Marketing Services in Hyderabad | Book a service",
+    "domain": "aoplweb.in",
+    "website_url": "https://aoplweb.in/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Cyber Pearl B-Block, HiTech City, Madhapur, Hyderabad, Telangana 500081, Hyderabad, 500081",
+    "industry": "office=it",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:36:04.326Z",
+    "created_at": "2026-10-09T06:35:26.484Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/9773299678",
+        "source_url": "https://www.openstreetmap.org/node/9773299678"
+      }
+    ]
+  },
+  {
+    "key": "beta-cae.com",
+    "name": "BETA CAE Systems India Pvt. Ltd. (Hyderabad Office)",
+    "domain": "beta-cae.com",
+    "website_url": "https://www.beta-cae.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "500033",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:48:43.752Z",
+    "created_at": "2026-10-12T06:48:07.965Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11578362769",
+        "source_url": "https://www.openstreetmap.org/node/11578362769"
+      }
+    ]
+  },
+  {
+    "key": "bizionictech.com",
+    "name": "Bizionic Technologies Pvt Ltd",
+    "domain": "bizionictech.com",
+    "website_url": "https://www.bizionictech.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "3rd Floor, Office No 1A, 6-3-1090/B/4 Raj Bhavan Rd, Telangana, Hyderabad, 500082",
+    "industry": "office=advertising_agency",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:48:43.702Z",
+    "created_at": "2026-10-12T06:48:07.965Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11505469876",
+        "source_url": "https://www.openstreetmap.org/node/11505469876"
+      }
+    ]
+  },
+  {
+    "key": "chartingnow.com",
+    "name": "Charting Now Visual Data Solutions Private Limited",
+    "domain": "chartingnow.com",
+    "website_url": "https://chartingnow.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "hyderabad",
+    "address": "Module No.204 2nd Floor, Kamala Nagar, ECIL P.O.,, hyderabad, 500062",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:49:03.752Z",
+    "created_at": "2026-10-12T06:48:07.965Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/12946439016",
+        "source_url": "https://www.openstreetmap.org/node/12946439016"
+      }
+    ]
+  },
+  {
+    "key": "colaborate.in",
+    "name": "CLOwork",
+    "domain": "colaborate.in",
+    "website_url": "https://www.colaborate.in/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "103 First Floor, Newmark House, Opp. Maxcure Hospital, Hitech City Road, Patrika Nagar,, Hyderabad, 500 033",
+    "industry": "office=yes",
+    "discovery_status": "blocked_robots",
+    "scan_error": "robots.txt unreachable (DNS resolution failed for www.colaborate.in: getaddrinfo ENOTFOUND www.colaborate.in); not crawling",
+    "pages_scanned": 0,
+    "last_scanned_at": "2026-10-12T06:49:10.664Z",
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/5915115202",
+        "source_url": "https://www.openstreetmap.org/node/5915115202"
+      }
+    ]
+  },
+  {
+    "key": "colruyt.in",
+    "name": "Colruyt IT Consultancy India Pvt. Ltd.",
+    "domain": "colruyt.in",
+    "website_url": "http://www.colruyt.in/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "IT, software, technology",
+    "discovery_status": "invalid_website",
+    "scan_error": "Redirected off-site to https://in.colruytgroup.com/",
+    "pages_scanned": 1,
+    "last_scanned_at": "2026-10-09T06:36:21.224Z",
+    "created_at": "2026-10-09T06:35:26.485Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/3009394901",
+        "source_url": "https://www.openstreetmap.org/node/3009394901"
+      }
+    ]
+  },
+  {
+    "key": "ctel.in",
+    "name": "C-Tel Infosystems",
+    "domain": "ctel.in",
+    "website_url": "https://ctel.in/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Plot No. 63, 1st and 2nd Floors, Kavuri Hills Phase 1, Near Jubilee Ridge Hotel, Madhapur, Kavuri Hills Phase 1, Kavuri Hills, Madhapur, Hyderabad, 500033",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:49:12.907Z",
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "way/632251671",
+        "source_url": "https://www.openstreetmap.org/way/632251671"
+      }
+    ]
+  },
+  {
+    "key": "devlogix.com.pk",
+    "name": "DevLogix",
+    "domain": "devlogix.com.pk",
+    "website_url": "https://devlogix.com.pk/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Rahwali",
+    "address": "Gujranwala, Rahwali, 52280",
+    "industry": "office=it",
+    "discovery_status": "scanned",
+    "scan_error": "https://devlogix.com.pk/industries: HTTP 404; https://devlogix.com.pk/services: HTTP 404",
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:36:14.935Z",
+    "created_at": "2026-10-09T06:35:26.485Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/14130010961",
+        "source_url": "https://www.openstreetmap.org/node/14130010961"
+      }
+    ]
+  },
+  {
+    "key": "digitalmojo.in",
+    "name": "Digital Mojo",
+    "domain": "digitalmojo.in",
+    "website_url": "https://www.digitalmojo.in/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Plot No. 34A Lane No. 12, Rangareddy, Hyderabad, 500033",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:49:02.268Z",
+    "created_at": "2026-10-12T06:48:07.965Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11601446167",
+        "source_url": "https://www.openstreetmap.org/node/11601446167"
+      }
+    ]
+  },
+  {
+    "key": "eesavyasa.com",
+    "name": "Eesavyasa Technologies Pvt Ltd",
+    "domain": "eesavyasa.com",
+    "website_url": "https://www.eesavyasa.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Plot 79 SVCIE Phase 3, Dr Feroz Road, Hyderabad, 500037",
+    "industry": "IT, software, technology",
+    "discovery_status": "blocked_robots",
+    "scan_error": "robots.txt 403 (treated as disallow)",
+    "pages_scanned": 0,
+    "last_scanned_at": "2026-10-12T06:49:06.078Z",
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "way/356180663",
+        "source_url": "https://www.openstreetmap.org/way/356180663"
+      }
+    ]
+  },
+  {
+    "key": "euclidinnovations.com",
+    "name": "Euclid Innovations",
+    "domain": "euclidinnovations.com",
+    "website_url": "https://euclidinnovations.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "2-58 ISB Road, Hyderabad, 500008",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:48:30.696Z",
+    "created_at": "2026-10-12T06:48:07.965Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11266266642",
+        "source_url": "https://www.openstreetmap.org/node/11266266642"
+      }
+    ]
+  },
+  {
+    "key": "fleetronix.io",
+    "name": "Fleetronix Systems",
+    "domain": "fleetronix.io",
+    "website_url": "https://fleetronix.io/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "70/P Road no. 5, Hyderabad, 500032",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:48:31.880Z",
+    "created_at": "2026-10-12T06:48:07.965Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/9274990414",
+        "source_url": "https://www.openstreetmap.org/node/9274990414"
+      }
+    ]
+  },
+  {
+    "key": "foinixdigital.in",
+    "name": "Foinix Digital Services",
+    "domain": "foinixdigital.in",
+    "website_url": "https://foinixdigital.in/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Telangana, Hyderabad, 500019",
+    "industry": "office=advertising_agency",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:48:34.230Z",
+    "created_at": "2026-10-12T06:48:07.965Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11113377356",
+        "source_url": "https://www.openstreetmap.org/node/11113377356"
+      }
+    ]
+  },
+  {
+    "key": "geosys.co.in",
+    "name": "Geosys Enterprise Solutions Pvt. Ltd.",
+    "domain": "geosys.co.in",
+    "website_url": "https://geosys.co.in/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "6-3-841/A/2/C-1 Shanthi Nagar Colony, Hyderabad, 500016",
+    "industry": "office=it",
+    "discovery_status": "blocked_robots",
+    "scan_error": "robots.txt unreachable (certificate has expired); not crawling",
+    "pages_scanned": 0,
+    "last_scanned_at": "2026-10-09T06:35:44.779Z",
+    "created_at": "2026-10-09T06:35:26.482Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/3404080921",
+        "source_url": "https://www.openstreetmap.org/node/3404080921"
+      }
+    ]
+  },
+  {
+    "key": "globallogic.com",
+    "name": "GlobalLogic Technologies",
+    "domain": "globallogic.com",
+    "website_url": "https://www.globallogic.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Plot No 590A Road no 31, Jubilee Hills, Hyderabad, 500033",
+    "industry": "office=it",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:36:44.913Z",
+    "created_at": "2026-10-09T06:35:26.485Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "way/356244516",
+        "source_url": "https://www.openstreetmap.org/way/356244516"
+      }
+    ]
+  },
+  {
+    "key": "graylogictech.com",
+    "name": "Graylogic Technologies (P) Ltd",
+    "domain": "graylogictech.com",
+    "website_url": "https://www.graylogictech.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:35:44.091Z",
+    "created_at": "2026-10-09T06:35:26.481Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/1341929876",
+        "source_url": "https://www.openstreetmap.org/node/1341929876"
+      }
+    ]
+  },
+  {
+    "key": "guidewellit.com",
+    "name": "Guidewell IT Private Limited",
+    "domain": "guidewellit.com",
+    "website_url": "https://guidewellit.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "blocked_robots",
+    "scan_error": "robots.txt unreachable (DNS resolution failed for guidewellit.com: getaddrinfo ENOTFOUND guidewellit.com); not crawling",
+    "pages_scanned": 0,
+    "last_scanned_at": "2026-10-09T06:35:57.804Z",
+    "created_at": "2026-10-09T06:35:26.484Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/9788465128",
+        "source_url": "https://www.openstreetmap.org/node/9788465128"
+      }
+    ]
+  },
+  {
+    "key": "ikeva.com",
+    "name": "Ikeva Hyderabad",
+    "domain": "ikeva.com",
+    "website_url": "https://www.ikeva.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:35:54.613Z",
+    "created_at": "2026-10-09T06:35:26.482Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/3218374885",
+        "source_url": "https://www.openstreetmap.org/node/3218374885"
+      }
+    ]
+  },
+  {
+    "key": "klrvertex.com",
+    "name": "KLR Vertex",
+    "domain": "klrvertex.com",
+    "website_url": "https://klrvertex.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Hyderabad, 500081",
+    "industry": "IT, software, technology",
+    "discovery_status": "blocked_robots",
+    "scan_error": "robots.txt unreachable (DNS resolution failed for klrvertex.com: getaddrinfo ENOTFOUND klrvertex.com); not crawling",
+    "pages_scanned": 0,
+    "last_scanned_at": "2026-10-12T06:49:13.045Z",
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7849753327",
+        "source_url": "https://www.openstreetmap.org/node/7849753327"
+      }
+    ]
+  },
+  {
+    "key": "kosmiktechnologies.com",
+    "name": "Kosmik Technologies Pvt Ltd.",
+    "domain": "kosmiktechnologies.com",
+    "website_url": "https://www.kosmiktechnologies.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=educational_institution",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:37:08.558Z",
+    "created_at": "2026-10-09T06:35:26.488Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7246482629",
+        "source_url": "https://www.openstreetmap.org/node/7246482629"
+      }
+    ]
+  },
+  {
+    "key": "linkfields.com",
+    "name": "Linkfields Innovations Private Limited",
+    "domain": "linkfields.com",
+    "website_url": "https://linkfields.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "809, Gowra Fountain Head, Huda Techo Enclave Vitta Rao Nagar, Hyderabad, 500081",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:48:19.150Z",
+    "created_at": "2026-10-12T06:48:07.965Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/10849248414",
+        "source_url": "https://www.openstreetmap.org/node/10849248414"
+      }
+    ]
+  },
+  {
+    "key": "liquidhub.com",
+    "name": "Liquidhub",
+    "domain": "liquidhub.com",
+    "website_url": "https://www.liquidhub.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Old Bombay Road, 500032",
+    "industry": "office=it;company",
+    "discovery_status": "invalid_website",
+    "scan_error": "Redirected off-site to https://www.capgemini.com/",
+    "pages_scanned": 1,
+    "last_scanned_at": "2026-10-09T06:36:17.559Z",
+    "created_at": "2026-10-09T06:35:26.485Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/2922426320",
+        "source_url": "https://www.openstreetmap.org/node/2922426320"
+      }
+    ]
+  },
+  {
+    "key": "mantravy.com",
+    "name": "Mantravy Online Services",
+    "domain": "mantravy.com",
+    "website_url": "https://mantravy.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "532 100 Feet Road, Megha Hills, Madhapur, Hyderabad, 500081",
+    "industry": "office=it",
+    "discovery_status": "blocked_robots",
+    "scan_error": "robots.txt unreachable (DNS resolution failed for mantravy.com: getaddrinfo ENOTFOUND mantravy.com); not crawling",
+    "pages_scanned": 0,
+    "last_scanned_at": "2026-10-09T06:35:54.624Z",
+    "created_at": "2026-10-09T06:35:26.483Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/8354338133",
+        "source_url": "https://www.openstreetmap.org/node/8354338133"
+      }
+    ]
+  },
+  {
+    "key": "mclean.in",
+    "name": "La McLean India Pvt. Ltd.",
+    "domain": "mclean.in",
+    "website_url": "http://www.mclean.in/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "1-89/3/B/40-42/KS/101, First Floor, Krishe Sapphire Vittal Rao Nagar Madhapur,, Hyderabad, 500081",
+    "industry": "office=it",
+    "discovery_status": "blocked_robots",
+    "scan_error": "robots.txt 403 (treated as disallow)",
+    "pages_scanned": 0,
+    "last_scanned_at": "2026-10-09T06:35:46.739Z",
+    "created_at": "2026-10-09T06:35:26.483Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/5004970204",
+        "source_url": "https://www.openstreetmap.org/node/5004970204"
+      }
+    ]
+  },
+  {
+    "key": "meta.com",
+    "name": "Facebook India",
+    "domain": "meta.com",
+    "website_url": "http://www.meta.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Skyview 10 Hi Tech City Main Road, 500081",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:49:50.199Z",
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/12896161101",
+        "source_url": "https://www.openstreetmap.org/node/12896161101"
+      }
+    ]
+  },
+  {
+    "key": "ness.com",
+    "name": "Ness Technologies",
+    "domain": "ness.com",
+    "website_url": "https://www.ness.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "IT, software, technology",
+    "discovery_status": "blocked_robots",
+    "scan_error": "robots.txt 403 (treated as disallow)",
+    "pages_scanned": 0,
+    "last_scanned_at": "2026-10-09T06:36:52.290Z",
+    "created_at": "2026-10-09T06:35:26.487Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/2964578879",
+        "source_url": "https://www.openstreetmap.org/node/2964578879"
+      }
+    ]
+  },
+  {
+    "key": "nextbillion.ai",
+    "name": "NextBillion.ai",
+    "domain": "nextbillion.ai",
+    "website_url": "https://nextbillion.ai/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Hyderabad, 500081",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:37:22.270Z",
+    "created_at": "2026-10-09T06:35:26.488Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/8129902419",
+        "source_url": "https://www.openstreetmap.org/node/8129902419"
+      }
+    ]
+  },
+  {
+    "key": "optionmatrix.com",
+    "name": "Option Matrix Infotech Private Limited.",
+    "domain": "optionmatrix.com",
+    "website_url": "https://optionmatrix.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "100 Feet Road, Silicon Valley, Madhapur, Hyderabad, 500081",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:37:05.240Z",
+    "created_at": "2026-10-09T06:35:26.488Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/4644283716",
+        "source_url": "https://www.openstreetmap.org/node/4644283716"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/11101235047",
+    "name": "Infrability IT Solutions",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "hyderabad",
+    "address": "hyderabad, 500032",
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11101235047",
+        "source_url": "https://www.openstreetmap.org/node/11101235047"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/11447371959",
+    "name": "Evergent",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11447371959",
+        "source_url": "https://www.openstreetmap.org/node/11447371959"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/11447371960",
+    "name": "EPIQ Systems",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11447371960",
+        "source_url": "https://www.openstreetmap.org/node/11447371960"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/11447371961",
+    "name": "OnePlus",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11447371961",
+        "source_url": "https://www.openstreetmap.org/node/11447371961"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/11447371962",
+    "name": "Fedex ACC Hyderabad",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.996Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11447371962",
+        "source_url": "https://www.openstreetmap.org/node/11447371962"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/11447371963",
+    "name": "ZF Technology Centre",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.996Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11447371963",
+        "source_url": "https://www.openstreetmap.org/node/11447371963"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/12073102254",
+    "name": "Lab of Spatial Informatics (LSI)",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Himalaya D-4 Research Street, Telangana, Hyderabad, 500032",
+    "industry": "office=educational_institution",
+    "discovery_status": "invalid_website",
+    "scan_error": "University / government / research institution site — not a company",
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.965Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/12073102254",
+        "source_url": "https://www.openstreetmap.org/node/12073102254"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/13021184118",
+    "name": "Accenture Services Private Limited",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.996Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/13021184118",
+        "source_url": "https://www.openstreetmap.org/node/13021184118"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/13545320662",
+    "name": "Centre for Quantum Science & Technology",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Old Bombay Road, Telangana, Hyderabad, 500032",
+    "industry": "office=research",
+    "discovery_status": "invalid_website",
+    "scan_error": "University / government / research institution site — not a company",
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/13545320662",
+        "source_url": "https://www.openstreetmap.org/node/13545320662"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/1520935382",
+    "name": "IGSA Labs",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/1520935382",
+        "source_url": "https://www.openstreetmap.org/node/1520935382"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/2352087835",
+    "name": "Klaxon IT Pvt Limited",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "hyderabad",
+    "address": "Sbiicm road, hyderabad, 500034",
+    "industry": "IT, software, technology",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:08.077Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/2352087835",
+        "source_url": "https://www.openstreetmap.org/node/2352087835"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/2712709795",
+    "name": "great deccan software",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "IT, software, technology",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:08.078Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/2712709795",
+        "source_url": "https://www.openstreetmap.org/node/2712709795"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/3010469787",
+    "name": "Hatch Force",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/3010469787",
+        "source_url": "https://www.openstreetmap.org/node/3010469787"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/3159027259",
+    "name": "Pearson Prometric center",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "hyderabad",
+    "address": "hyderabad",
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/3159027259",
+        "source_url": "https://www.openstreetmap.org/node/3159027259"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/3490944915",
+    "name": "Jaini pvt ltd.",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/3490944915",
+        "source_url": "https://www.openstreetmap.org/node/3490944915"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/5405055429",
+    "name": "DLF park",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/5405055429",
+        "source_url": "https://www.openstreetmap.org/node/5405055429"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/6288921960",
+    "name": "eSKAR Technologies",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/6288921960",
+        "source_url": "https://www.openstreetmap.org/node/6288921960"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/6633198227",
+    "name": "Delta Technologies & Management Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/6633198227",
+        "source_url": "https://www.openstreetmap.org/node/6633198227"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/6866164613",
+    "name": "Trigeo Technologies",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/6866164613",
+        "source_url": "https://www.openstreetmap.org/node/6866164613"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/6866164616",
+    "name": "Trigeo Technologies",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/6866164616",
+        "source_url": "https://www.openstreetmap.org/node/6866164616"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/6935208973",
+    "name": "Kapston",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/6935208973",
+        "source_url": "https://www.openstreetmap.org/node/6935208973"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/6935240991",
+    "name": "Karvy",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/6935240991",
+        "source_url": "https://www.openstreetmap.org/node/6935240991"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/6935384866",
+    "name": "Gvr infra technologies",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/6935384866",
+        "source_url": "https://www.openstreetmap.org/node/6935384866"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021286921",
+    "name": "Oakton consulting technology",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021286921",
+        "source_url": "https://www.openstreetmap.org/node/7021286921"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303615",
+    "name": "ICS Tech Service Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303615",
+        "source_url": "https://www.openstreetmap.org/node/7021303615"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303618",
+    "name": "Sine90 Software Labs Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303618",
+        "source_url": "https://www.openstreetmap.org/node/7021303618"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303620",
+    "name": "37 Media",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303620",
+        "source_url": "https://www.openstreetmap.org/node/7021303620"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303621",
+    "name": "Prime Software Solutions Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303621",
+        "source_url": "https://www.openstreetmap.org/node/7021303621"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303624",
+    "name": "Global Logic Technologies",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303624",
+        "source_url": "https://www.openstreetmap.org/node/7021303624"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303625",
+    "name": "Sufisoft Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303625",
+        "source_url": "https://www.openstreetmap.org/node/7021303625"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303626",
+    "name": "Shras IT Solutions Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303626",
+        "source_url": "https://www.openstreetmap.org/node/7021303626"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303627",
+    "name": "Aadithya IT Service",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303627",
+        "source_url": "https://www.openstreetmap.org/node/7021303627"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303631",
+    "name": "Prog9 Softtech Private Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303631",
+        "source_url": "https://www.openstreetmap.org/node/7021303631"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303632",
+    "name": "Abridge Sol",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303632",
+        "source_url": "https://www.openstreetmap.org/node/7021303632"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303634",
+    "name": "Apex Covantage",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303634",
+        "source_url": "https://www.openstreetmap.org/node/7021303634"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303643",
+    "name": "Big C corporate Office",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303643",
+        "source_url": "https://www.openstreetmap.org/node/7021303643"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303650",
+    "name": "InteGen IT Services Pvt. Ltd.",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303650",
+        "source_url": "https://www.openstreetmap.org/node/7021303650"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303665",
+    "name": "Agiliq Info Solutions India Private Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303665",
+        "source_url": "https://www.openstreetmap.org/node/7021303665"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303666",
+    "name": "Votigo Software Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303666",
+        "source_url": "https://www.openstreetmap.org/node/7021303666"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303667",
+    "name": "Maventus Software Technologies Private. Ltd.",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303667",
+        "source_url": "https://www.openstreetmap.org/node/7021303667"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303668",
+    "name": "CADVision Engineers Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303668",
+        "source_url": "https://www.openstreetmap.org/node/7021303668"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303670",
+    "name": "Golden Sun Technology Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303670",
+        "source_url": "https://www.openstreetmap.org/node/7021303670"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303676",
+    "name": "Syena Infosoft Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303676",
+        "source_url": "https://www.openstreetmap.org/node/7021303676"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7021303682",
+    "name": "WebFurther India Pvt. Ltd.",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7021303682",
+        "source_url": "https://www.openstreetmap.org/node/7021303682"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820746",
+    "name": "Fission Labs",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820746",
+        "source_url": "https://www.openstreetmap.org/node/7025820746"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820748",
+    "name": "Ray Business Technologies Pvt Ltd.",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820748",
+        "source_url": "https://www.openstreetmap.org/node/7025820748"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820754",
+    "name": "Web Syn",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820754",
+        "source_url": "https://www.openstreetmap.org/node/7025820754"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820765",
+    "name": "Omega IT Professionals Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820765",
+        "source_url": "https://www.openstreetmap.org/node/7025820765"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820770",
+    "name": "CSR IMPEX Private Limited",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820770",
+        "source_url": "https://www.openstreetmap.org/node/7025820770"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820775",
+    "name": "Saky Technologies Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820775",
+        "source_url": "https://www.openstreetmap.org/node/7025820775"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820777",
+    "name": "ENH iSecure Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820777",
+        "source_url": "https://www.openstreetmap.org/node/7025820777"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820781",
+    "name": "Inforaise Technologies Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820781",
+        "source_url": "https://www.openstreetmap.org/node/7025820781"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820807",
+    "name": "Nimbu Tech Systems",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820807",
+        "source_url": "https://www.openstreetmap.org/node/7025820807"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820808",
+    "name": "Sri Kakatiya Industries (India)Pvt.ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820808",
+        "source_url": "https://www.openstreetmap.org/node/7025820808"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820817",
+    "name": "NCentric Technologies India pvt ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820817",
+        "source_url": "https://www.openstreetmap.org/node/7025820817"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820819",
+    "name": "Varsity Management pvt ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820819",
+        "source_url": "https://www.openstreetmap.org/node/7025820819"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820820",
+    "name": "Kclink Technologies Pvt.Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820820",
+        "source_url": "https://www.openstreetmap.org/node/7025820820"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820827",
+    "name": "Techgallore It Solutions",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820827",
+        "source_url": "https://www.openstreetmap.org/node/7025820827"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820834",
+    "name": "Izetta IT Solutions",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820834",
+        "source_url": "https://www.openstreetmap.org/node/7025820834"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820839",
+    "name": "Sneha Software Solutions",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820839",
+        "source_url": "https://www.openstreetmap.org/node/7025820839"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820841",
+    "name": "Athena Technology Solution",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820841",
+        "source_url": "https://www.openstreetmap.org/node/7025820841"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820844",
+    "name": "Technovert",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820844",
+        "source_url": "https://www.openstreetmap.org/node/7025820844"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820845",
+    "name": "Shore Infotech India pvt",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820845",
+        "source_url": "https://www.openstreetmap.org/node/7025820845"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820867",
+    "name": "Choral Technologies",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820867",
+        "source_url": "https://www.openstreetmap.org/node/7025820867"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820868",
+    "name": "Arbiva Technologies Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820868",
+        "source_url": "https://www.openstreetmap.org/node/7025820868"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820890",
+    "name": "Vinsys IT Services India Pvt Ltd.",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820890",
+        "source_url": "https://www.openstreetmap.org/node/7025820890"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7025820898",
+    "name": "Ingresos Technologies",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7025820898",
+        "source_url": "https://www.openstreetmap.org/node/7025820898"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7035236544",
+    "name": "RMSI",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7035236544",
+        "source_url": "https://www.openstreetmap.org/node/7035236544"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7152903470",
+    "name": "PLLC software Solutions",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7152903470",
+        "source_url": "https://www.openstreetmap.org/node/7152903470"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7246482632",
+    "name": "Strstosphere it services pvtltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7246482632",
+        "source_url": "https://www.openstreetmap.org/node/7246482632"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7246498934",
+    "name": "Find logics software",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7246498934",
+        "source_url": "https://www.openstreetmap.org/node/7246498934"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7246498936",
+    "name": "ux reactor india pvt",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7246498936",
+        "source_url": "https://www.openstreetmap.org/node/7246498936"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7246498937",
+    "name": "collabra technologies",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7246498937",
+        "source_url": "https://www.openstreetmap.org/node/7246498937"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7248877411",
+    "name": "Wellsfargo",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Old Bombay Highway, Raidurgam, Hyderabad",
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7248877411",
+        "source_url": "https://www.openstreetmap.org/node/7248877411"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/7248877417",
+    "name": "Karvy",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Road No 2, Financial District, Hyderabad",
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/7248877417",
+        "source_url": "https://www.openstreetmap.org/node/7248877417"
+      }
+    ]
+  },
+  {
+    "key": "osm:node/9272496603",
+    "name": "Tez Solutions",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "1-33-155 Lake Ville Extension, RTC Colony, Tirumalagiri",
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/9272496603",
+        "source_url": "https://www.openstreetmap.org/node/9272496603"
+      }
+    ]
+  },
+  {
+    "key": "osm:relation/5167102",
+    "name": "Tech Mahindra",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "hyderabad",
+    "address": "Plot No. 22 to 34, Hi-Tech City, Madhapur, hyderabad, 500081",
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:08.077Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "relation/5167102",
+        "source_url": "https://www.openstreetmap.org/relation/5167102"
+      }
+    ]
+  },
+  {
+    "key": "osm:way/1299545984",
+    "name": "Wells Fargo Tower 4",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:08.076Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "way/1299545984",
+        "source_url": "https://www.openstreetmap.org/way/1299545984"
+      }
+    ]
+  },
+  {
+    "key": "osm:way/356182760",
+    "name": "Swan Environmental Pvt Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "922",
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:08.074Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "way/356182760",
+        "source_url": "https://www.openstreetmap.org/way/356182760"
+      }
+    ]
+  },
+  {
+    "key": "osm:way/360200240",
+    "name": "Digital Nirvana Information Systems Ltd",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Quena Square, Banjara Hills Road No. 1, Hyderabad",
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:08.075Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "way/360200240",
+        "source_url": "https://www.openstreetmap.org/way/360200240"
+      }
+    ]
+  },
+  {
+    "key": "osm:way/404526963",
+    "name": "National Remote Sensing Centre",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Balanagar Cross Road, Hyderabad, 500036",
+    "industry": "office=research",
+    "discovery_status": "invalid_website",
+    "scan_error": "University / government / research institution site — not a company",
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "way/404526963",
+        "source_url": "https://www.openstreetmap.org/way/404526963"
+      }
+    ]
+  },
+  {
+    "key": "osm:way/782005880",
+    "name": "Genpact",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:08.076Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "way/782005880",
+        "source_url": "https://www.openstreetmap.org/way/782005880"
+      }
+    ]
+  },
+  {
+    "key": "osm:way/90465066",
+    "name": "Oracle Campus Phase 1",
+    "domain": null,
+    "website_url": null,
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": null,
+    "industry": "office=it",
+    "discovery_status": "no_website",
+    "scan_error": null,
+    "pages_scanned": 0,
+    "last_scanned_at": null,
+    "created_at": "2026-10-12T06:48:08.073Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "way/90465066",
+        "source_url": "https://www.openstreetmap.org/way/90465066"
+      }
+    ]
+  },
+  {
+    "key": "perceptive-analytics.com",
+    "name": "Perceptive Analytics Pvt. Ltd.",
+    "domain": "perceptive-analytics.com",
+    "website_url": "https://www.perceptive-analytics.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Beside Centre for Good Governance, Greenlands colony, Gachibowli 'X'Roads, Sherilingampally, Rangareddy Dt.,",
+    "address": "Survey 91 Sundarayya Vignana Kendram road, Beside Centre for Good Governance, Greenlands colony, Gachibowli 'X'Roads, Sherilingampally, Rangareddy Dt.,, Hyderabad – 500032",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:37:27.805Z",
+    "created_at": "2026-10-09T06:35:26.488Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/5392757277",
+        "source_url": "https://www.openstreetmap.org/node/5392757277"
+      }
+    ]
+  },
+  {
+    "key": "planonsoftware.com",
+    "name": "planon",
+    "domain": "planonsoftware.com",
+    "website_url": "https://planonsoftware.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "564/a 39 Road Number 92",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:36:46.192Z",
+    "created_at": "2026-10-09T06:35:26.486Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/5646829923",
+        "source_url": "https://www.openstreetmap.org/node/5646829923"
+      }
+    ]
+  },
+  {
+    "key": "pramati.com",
+    "name": "Pramati Technologies Pvt. Ltd.",
+    "domain": "pramati.com",
+    "website_url": "https://www.pramati.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "Road Number 1, Banjara Hills, Hyderabad, 500034",
+    "industry": "office=it",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:36:01.919Z",
+    "created_at": "2026-10-09T06:35:26.483Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/6115279982",
+        "source_url": "https://www.openstreetmap.org/node/6115279982"
+      }
+    ]
+  },
+  {
+    "key": "proventuresindia.com",
+    "name": "Proventures Education & Consulting Services",
+    "domain": "proventuresindia.com",
+    "website_url": "https://www.proventuresindia.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "102- Nestcon Zion Apartments",
+    "industry": "office=it",
+    "discovery_status": "scanned",
+    "scan_error": "https://consulting.proventuresindia.com/leadership-change-management-consulting: disallowed by robots.txt (skipped); https://consulting.proventuresindia.com/ppm-project-portfolio-management: disallowed by robots.txt (skipped); https://consulting.proventuresindia.com/enterprise-risk-management-erm-consulting: disallowed by robots.txt (skipped); https://consulting.proventuresindia.com/project-management-office-pmo: disallowed by robots.txt (skipped); https://consulting.proventuresindia.com/resource-management-services: disallowed by robots.txt (skipped)",
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:36:22.629Z",
+    "created_at": "2026-10-09T06:35:26.484Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/11015675861",
+        "source_url": "https://www.openstreetmap.org/node/11015675861"
+      }
+    ]
+  },
+  {
+    "key": "serc.iiit.ac.in",
+    "name": "Software Engineering Research Centre",
+    "domain": "serc.iiit.ac.in",
+    "website_url": "https://serc.iiit.ac.in/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "IIIT Hyderabad, Telangana, Hyderabad, 500032",
+    "industry": "office=research",
+    "discovery_status": "invalid_website",
+    "scan_error": "University / government / research institution site — not a company",
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:36:51.054Z",
+    "created_at": "2026-10-09T06:35:26.486Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/13849668773",
+        "source_url": "https://www.openstreetmap.org/node/13849668773"
+      }
+    ]
+  },
+  {
+    "key": "sonata-software.com",
+    "name": "Sonata Software Limites",
+    "domain": "sonata-software.com",
+    "website_url": "https://www.sonata-software.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "1-10-176 Green Towers, Begumpet Main Road, Hyderabad, 500016",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:36:58.557Z",
+    "created_at": "2026-10-09T06:35:26.487Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "way/357187956",
+        "source_url": "https://www.openstreetmap.org/way/357187956"
+      }
+    ]
+  },
+  {
+    "key": "swecha.org",
+    "name": "Swecha Office",
+    "domain": "swecha.org",
+    "website_url": "https://www.swecha.org/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Beside Centre for Good Governance, Greenlands colony, Gachibowli 'X'Roads, Sherilingampally, Rangareddy Dt.,",
+    "address": "Sy. No. 91 Nehru Outer Ring Road, Beside Centre for Good Governance, Greenlands colony, Gachibowli 'X'Roads, Sherilingampally, Rangareddy Dt.,, Hyderabad – 500032",
+    "industry": "office=ngo",
+    "discovery_status": "scanned",
+    "scan_error": "https://swecha.org/about: disallowed by robots.txt (skipped); http://swecha.org/content/swecha-project: disallowed by robots.txt (skipped)",
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:36:33.797Z",
+    "created_at": "2026-10-09T06:35:26.486Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/5469029529",
+        "source_url": "https://www.openstreetmap.org/node/5469029529"
+      }
+    ]
+  },
+  {
+    "key": "transguard.in",
+    "name": "Transguard Electrical Systems",
+    "domain": "transguard.in",
+    "website_url": "http://www.transguard.in/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "500055",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:49:13.927Z",
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/13760072401",
+        "source_url": "https://www.openstreetmap.org/node/13760072401"
+      }
+    ]
+  },
+  {
+    "key": "unifytech.com",
+    "name": "UNIFY",
+    "domain": "unifytech.com",
+    "website_url": "https://www.unifytech.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "16 Pioneer Towers HITEC City, Hyderabad, 500081",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:49:20.260Z",
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/6880505428",
+        "source_url": "https://www.openstreetmap.org/node/6880505428"
+      }
+    ]
+  },
+  {
+    "key": "unwiredlabs.com",
+    "name": "Unwired Labs (India) Pvt Ltd",
+    "domain": "unwiredlabs.com",
+    "website_url": "https://unwiredlabs.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "500033",
+    "industry": "office=it",
+    "discovery_status": "scanned",
+    "scan_error": "https://my.unwiredlabs.com/dashboard/login: disallowed by robots.txt (skipped)",
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-09T06:35:57.794Z",
+    "created_at": "2026-10-09T06:35:26.482Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/4398575802",
+        "source_url": "https://www.openstreetmap.org/node/4398575802"
+      }
+    ]
+  },
+  {
+    "key": "vimukti.com",
+    "name": "Vimukti Technologies Pvt. Ltd.",
+    "domain": "vimukti.com",
+    "website_url": "https://www.vimukti.com/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad",
+    "address": "28 Arul Colony, 500062",
+    "industry": "IT, software, technology",
+    "discovery_status": "blocked_robots",
+    "scan_error": "robots.txt unreachable (Timed out after 10000 ms); not crawling",
+    "pages_scanned": 0,
+    "last_scanned_at": "2026-10-09T06:36:56.686Z",
+    "created_at": "2026-10-09T06:35:26.487Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/2653181967",
+        "source_url": "https://www.openstreetmap.org/node/2653181967"
+      }
+    ]
+  },
+  {
+    "key": "vindago.in",
+    "name": "Vindago Innovations",
+    "domain": "vindago.in",
+    "website_url": "https://www.vindago.in/",
+    "country": "India",
+    "state": "Telangana",
+    "city": "Hyderabad, Telangana",
+    "address": "2a115 Hitec City - Kondapur Main Road, Hyderabad, Telangana, 500084",
+    "industry": "IT, software, technology",
+    "discovery_status": "scanned",
+    "scan_error": null,
+    "pages_scanned": 6,
+    "last_scanned_at": "2026-10-12T06:48:55.594Z",
+    "created_at": "2026-10-12T06:48:07.981Z",
+    "sources": [
+      {
+        "provider": "osm",
+        "provider_ref": "node/12972336035",
+        "source_url": "https://www.openstreetmap.org/node/12972336035"
+      }
+    ]
+  }
+]

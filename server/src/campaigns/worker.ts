@@ -3,6 +3,7 @@ import { config } from '../config.js';
 import { getDb, logEvent } from '../db/index.js';
 import { classifySmtpError } from '../email/errors.js';
 import { fromHeader, realTransport, simulatedTransport, smtpStatus } from '../email/transport.js';
+import { scheduleSnapshot } from '../export/snapshot.js';
 import { logger } from '../logger.js';
 import { getSettings } from '../settings.js';
 import { hasResume, publishCampaign, resumePath, unsubscribeUrl, type MessageRow } from './service.js';
@@ -171,6 +172,9 @@ export class CampaignWorker {
     }
 
     // 3. Duplicate-send prevention: reserve the address (real sends only).
+    if (!simulate && db.prepare('SELECT 1 FROM contacted_history WHERE email = ?').get(m.email)) {
+      return this.finish(m, { status: 'skipped', error_code: 'DUPLICATE', error_message: 'Already contacted (imported history)', processed_at: now() });
+    }
     if (!simulate) {
       const owner = db.prepare('SELECT message_id, state FROM send_ledger WHERE email = ?').get(m.email) as
         | { message_id: number; state: string }
@@ -296,6 +300,7 @@ export class CampaignWorker {
     for (const { id } of done) {
       db.prepare(`UPDATE campaigns SET status = 'completed', completed_at = ?, updated_at = ? WHERE id = ?`).run(iso(this.clock()), iso(this.clock()), id);
       logEvent('campaign.completed', 'Campaign finished processing', { type: 'campaign', id });
+      scheduleSnapshot();
       publishCampaign(id);
     }
   }

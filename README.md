@@ -23,9 +23,53 @@ npm start                   # http://127.0.0.1:4000
 Tests (no network access; SMTP and HTTP are mocked):
 
 ```bash
-npm test                    # 98 tests
+npm test                    # 114 tests
 npm run typecheck
 ```
+
+## Your data on GitHub (data/snapshot)
+
+Scraped data is saved as readable JSON in `data/snapshot/`. It's written automatically after every discovery run, every finished campaign and every opt-out or template change. You can also use **Settings → Data files → Save data files now**, or run `npm run data:export`.
+
+| File | Contents |
+|---|---|
+| `companies.json` | companies, websites, locations, OpenStreetMap links |
+| `contacts.json` | contacts with type, confidence and where each was found |
+| `contacted.json` | everyone already emailed, so they're never emailed twice from any machine |
+| `suppressions.json` | opt-outs |
+| `templates.json` | your email templates |
+
+To publish it:
+
+```bash
+git add data/snapshot
+git commit -m "Update scraped data"
+git push
+```
+
+On another computer, `git clone`, `npm install`, copy `.env`, then `npm run dev`. The empty database loads the snapshot on first start. To merge newer files into an existing database, use `npm run data:import` or **Settings → Load from data files**.
+
+**Keep the repository private.** These files contain names and email addresses. `.env` (SMTP password) is never included.
+
+## Sending emails, step by step
+
+1. **Settings → Applying**: paste your Google Drive resume link (Share → *Anyone with the link*). The **Simple — resume button** template shows it as a centred blue *View My Resume* button.
+2. **Campaigns → New campaign**:
+   - **Pick automatically** chooses the best person at each company: HR, then talent acquisition and recruiting, then careers and founders, then general inboxes. Already-contacted people and companies, opt-outs, and privacy, legal, support and sales inboxes are skipped.
+   - Set how many, then choose the template and the role you're applying for.
+3. **Review**: click each recipient to see their exact email, and exclude anyone you don't want.
+4. **Approve**: type `SEND <n>`, then press **Start sending** and watch progress live.
+
+**One contact per company** is on by default: one email per company, and never a second person at a company you already wrote to. You can turn it off in Settings.
+
+While `EMAIL_TEST_MODE=true`, the whole flow is simulated. To send real email:
+1. Fill the SMTP settings in `.env` (Gmail: `smtp.gmail.com`, port 465, `SMTP_SECURE=true`, an App Password).
+2. Send yourself a test from **Email Templates**.
+3. Set `EMAIL_TEST_MODE=false` and restart.
+
+The Campaigns page shows a readiness checklist.
+
+University, government and research-institute sites (`.ac.in`, `.edu`, `.gov.in`, …) are not crawled.
 
 ## Credentials you must provide
 
@@ -152,8 +196,8 @@ server/src
   campaigns/                   service (draft → approve → start/pause/resume/cancel) + DB-backed worker
   export/excel.ts              Excel exports
   routes/, http/middleware.ts  REST + SSE, auth/host/CSRF guards
-server/test                    98 Vitest/Supertest tests (nock blocks all real network)
+server/test                    114 Vitest/Supertest tests (nock blocks all real network)
 web/src                        React pages: Dashboard, Discover, Companies, Contacts, Templates, Campaigns, History, Settings
 ```
-#   A g e n t - P a n d u  
- 
+
+# Agent-Pandu
